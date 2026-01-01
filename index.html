@@ -64,22 +64,142 @@
         <section id="projects" class="projects section">
             <div class="container">
                 <h2 class="section__title">Projects</h2>
-                <div class="projects__grid">
-                    <!-- Project cards will go here -->
-                    <article class="project-card">
-                        <h3 class="project-card__title">Project Name</h3>
-                        <p class="project-card__description">Brief description of the project and the problem it solves.</p>
-                        <div class="project-card__stack">
-                            <span class="tag">Docker</span>
-                            <span class="tag">Traefik</span>
-                            <span class="tag">n8n</span>
+                <p class="section__subtitle">Real systems solving real problems. Each project taught me something new about security, automation, and building reliable infrastructure.</p>
+
+                <div class="projects__list">
+
+                    <!-- Project 1: VPS Infrastructure -->
+                    <article class="project">
+                        <header class="project__header">
+                            <h3 class="project__title">Production VPS Infrastructure</h3>
+                            <div class="project__stack">
+                                <span class="tag">Docker</span>
+                                <span class="tag">Traefik</span>
+                                <span class="tag">Cloudflare</span>
+                                <span class="tag">Ubuntu</span>
+                            </div>
+                        </header>
+
+                        <div class="project__content">
+                            <div class="project__section">
+                                <h4 class="project__section-title">Problem</h4>
+                                <p>Needed a reliable, secure platform to host multiple web applications and services without paying for expensive managed solutions.</p>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">Architecture</h4>
+                                <p>Single VPS running Docker containers behind Traefik reverse proxy. Cloudflare provides DNS, DDoS protection, and SSL termination. All services defined in Docker Compose for reproducible deployments.</p>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">What I Built</h4>
+                                <ul class="project__list">
+                                    <li>Configured Traefik with automatic SSL certificate management via Let's Encrypt</li>
+                                    <li>Set up Cloudflare Tunnels for secure ingress without exposing ports</li>
+                                    <li>Implemented container-level network isolation</li>
+                                    <li>Created automated backup scripts for critical data</li>
+                                </ul>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">Security Considerations</h4>
+                                <p>Fail2ban for SSH protection, UFW firewall rules, non-root container execution, secrets management via environment files excluded from version control.</p>
+                            </div>
                         </div>
-                        <div class="project-card__links">
-                            <a href="#" class="project-card__link">View Details</a>
-                            <a href="#" class="project-card__link">GitHub</a>
-                        </div>
+
+                        <footer class="project__footer">
+                            <a href="#" class="project__link">View Architecture Diagram</a>
+                            <a href="#" class="project__link">GitHub</a>
+                        </footer>
                     </article>
-                    <!-- More project cards -->
+
+                    <!-- Project 2: n8n Automation -->
+                    <article class="project">
+                        <header class="project__header">
+                            <h3 class="project__title">n8n Automation Platform</h3>
+                            <div class="project__stack">
+                                <span class="tag">n8n</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">REST APIs</span>
+                                <span class="tag">Webhooks</span>
+                            </div>
+                        </header>
+
+                        <div class="project__content">
+                            <div class="project__section">
+                                <h4 class="project__section-title">Problem</h4>
+                                <p>Manual, repetitive tasks across multiple platforms were consuming hours each week. Needed a self-hosted automation solution with full data control.</p>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">Architecture</h4>
+                                <p>Self-hosted n8n instance running in Docker, connected to external services via API integrations. Webhook endpoints for real-time triggers, scheduled workflows for batch operations.</p>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">What I Built</h4>
+                                <ul class="project__list">
+                                    <li>Automated data sync workflows between multiple platforms</li>
+                                    <li>Built notification pipelines for monitoring and alerting</li>
+                                    <li>Created API integrations with third-party services</li>
+                                    <li>Implemented error handling and retry logic for reliability</li>
+                                </ul>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">Scalability</h4>
+                                <p>Workflows designed for idempotency to handle retries safely. Queue-based execution prevents overwhelming external APIs. Modular workflow design enables reuse across different automations.</p>
+                            </div>
+                        </div>
+
+                        <footer class="project__footer">
+                            <a href="#" class="project__link">View Workflow Examples</a>
+                        </footer>
+                    </article>
+
+                    <!-- Project 3: Placeholder for CRM/App -->
+                    <article class="project">
+                        <header class="project__header">
+                            <h3 class="project__title">Project Title</h3>
+                            <div class="project__stack">
+                                <span class="tag">Tech</span>
+                                <span class="tag">Stack</span>
+                                <span class="tag">Here</span>
+                            </div>
+                        </header>
+
+                        <div class="project__content">
+                            <div class="project__section">
+                                <h4 class="project__section-title">Problem</h4>
+                                <p>Describe the problem this project solves. What pain point did you address?</p>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">Architecture</h4>
+                                <p>Explain the technical architecture. How do the pieces fit together?</p>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">What I Built</h4>
+                                <ul class="project__list">
+                                    <li>Specific thing you implemented</li>
+                                    <li>Another concrete contribution</li>
+                                    <li>Technical decision you made</li>
+                                </ul>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">Security Considerations</h4>
+                                <p>What security measures did you implement? What trade-offs did you consider?</p>
+                            </div>
+                        </div>
+
+                        <footer class="project__footer">
+                            <a href="#" class="project__link">Live Demo</a>
+                            <a href="#" class="project__link">GitHub</a>
+                        </footer>
+                    </article>
+
                 </div>
             </div>
         </section>
