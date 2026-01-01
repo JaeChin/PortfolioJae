@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jaedon Chin - Cybersecurity, Automation, and Systems Engineering Portfolio">
+    <meta name="author" content="Jaedon Chin">
+
+    <title>Jaedon Chin | Cybersecurity & Systems Engineer</title>
+
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="site-header">
+        <nav class="nav" aria-label="Main navigation">
+            <a href="#" class="nav__logo">JC</a>
+            <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+                <span class="nav__toggle-bar"></span>
+            </button>
+            <ul class="nav__list">
+                <li><a href="#about" class="nav__link">About</a></li>
+                <li><a href="#projects" class="nav__link">Projects</a></li>
+                <li><a href="#skills" class="nav__link">Skills</a></li>
+                <li><a href="#experience" class="nav__link">Experience</a></li>
+                <li><a href="#contact" class="nav__link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container">
+                <h1 class="hero__title">Jaedon Chin</h1>
+                <p class="hero__subtitle">Cybersecurity | Automation | Systems</p>
+                <p class="hero__tagline">Building secure, automated infrastructure from the ground up.</p>
+                <div class="hero__cta">
+                    <a href="#projects" class="btn btn--primary">View Projects</a>
+                    <a href="#contact" class="btn btn--secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section__title">About</h2>
+                <div class="about__content">
+                    <p>MIS student with a focus on cybersecurity, hands-on infrastructure experience, and a passion for building systems that are secure, automated, and maintainable.</p>
+                    <p>I run my own VPS infrastructure, work with Docker and Traefik, manage DNS through Cloudflare, and build automation workflows with n8n. I believe in learning by doing—every system I build teaches me something new about security, scalability, and reliability.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section__title">Projects</h2>
+                <div class="projects__grid">
+                    <!-- Project cards will go here -->
+                    <article class="project-card">
+                        <h3 class="project-card__title">Project Name</h3>
+                        <p class="project-card__description">Brief description of the project and the problem it solves.</p>
+                        <div class="project-card__stack">
+                            <span class="tag">Docker</span>
+                            <span class="tag">Traefik</span>
+                            <span class="tag">n8n</span>
+                        </div>
+                        <div class="project-card__links">
+                            <a href="#" class="project-card__link">View Details</a>
+                            <a href="#" class="project-card__link">GitHub</a>
+                        </div>
+                    </article>
+                    <!-- More project cards -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section">
+            <div class="container">
+                <h2 class="section__title">Skills & Tools</h2>
+                <div class="skills__grid">
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Infrastructure</h3>
+                        <ul class="skill-group__list">
+                            <li>Linux (Ubuntu/Debian)</li>
+                            <li>Docker & Docker Compose</li>
+                            <li>Traefik Reverse Proxy</li>
+                            <li>VPS Management</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Security</h3>
+                        <ul class="skill-group__list">
+                            <li>Cloudflare (DNS, Tunnels)</li>
+                            <li>Zero-Trust Concepts</li>
+                            <li>SSL/TLS Configuration</li>
+                            <li>Network Security</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Automation</h3>
+                        <ul class="skill-group__list">
+                            <li>n8n Workflows</li>
+                            <li>Bash Scripting</li>
+                            <li>CI/CD Pipelines</li>
+                            <li>API Integrations</li>
+                        </ul>
+                    </div>
+                    <div class="skill-group">
+                        <h3 class="skill-group__title">Development</h3>
+                        <ul class="skill-group__list">
+                            <li>Python</li>
+                            <li>JavaScript</li>
+                            <li>HTML/CSS</li>
+                            <li>Git & GitHub</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="experience section">
+            <div class="container">
+                <h2 class="section__title">Experience</h2>
+                <div class="experience__timeline">
+                    <article class="experience-item">
+                        <h3 class="experience-item__title">Personal Infrastructure Lab</h3>
+                        <p class="experience-item__period">Ongoing</p>
+                        <p class="experience-item__description">Managing production VPS infrastructure with Docker, Traefik, and automated deployments. Building real systems to solve real problems.</p>
+                    </article>
+                    <!-- More experience items -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section">
+            <div class="container">
+                <h2 class="section__title">Contact</h2>
+                <p class="contact__intro">Interested in working together or have questions? Reach out.</p>
+                <div class="contact__links">
+                    <a href="https://github.com/" class="contact__link" target="_blank" rel="noopener noreferrer">
+                        GitHub
+                    </a>
+                    <a href="https://linkedin.com/" class="contact__link" target="_blank" rel="noopener noreferrer">
+                        LinkedIn
+                    </a>
+                    <a href="mailto:email@example.com" class="contact__link">
+                        Email
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; 2025 Jaedon Chin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor directories and files
+.vscode/
+.idea/
+.claude/
+.cursor/
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Local development
+.env
+.env.local
+
+# Build artifacts (if any future tooling is added)
+dist/
+build/
+node_modules/
