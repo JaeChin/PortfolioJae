@@ -417,9 +417,20 @@ p + p {
     border-bottom: 1px solid var(--color-border);
 }
 
+.project__title-row {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    flex-wrap: wrap;
+    margin-bottom: var(--space-md);
+}
+
 .project__title {
     font-size: var(--text-2xl);
-    margin-bottom: var(--space-md);
+}
+
+.project__title-row .project__title {
+    margin-bottom: 0;
 }
 
 .project__stack {
@@ -436,6 +447,11 @@ p + p {
     background-color: var(--color-border-light);
     border-radius: var(--radius-sm);
     color: var(--color-text-muted);
+}
+
+.tag--status {
+    background-color: #fef3c7;
+    color: #92400e;
 }
 
 .project__content {
