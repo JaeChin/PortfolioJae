@@ -668,6 +668,71 @@ p + p {
 }
 
 /* ==========================================================================
+   Mobile Responsive
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .section {
+        padding-block: var(--space-3xl);
+    }
+
+    .section__title {
+        font-size: var(--text-2xl);
+        margin-bottom: var(--space-xl);
+    }
+
+    .hero {
+        min-height: auto;
+        padding-block: var(--space-3xl);
+    }
+
+    .hero__tagline {
+        font-size: var(--text-lg);
+    }
+
+    .about__content p {
+        font-size: var(--text-base);
+    }
+
+    .section__subtitle {
+        font-size: var(--text-base);
+        margin-bottom: var(--space-xl);
+    }
+
+    .project__title {
+        font-size: var(--text-xl);
+    }
+
+    .skills__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-lg);
+    }
+
+    .contact__intro {
+        font-size: var(--text-base);
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding-inline: var(--space-md);
+    }
+
+    .skills__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__cta {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* ==========================================================================
    Utilities
    ========================================================================== */
 
