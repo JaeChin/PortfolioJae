@@ -100,6 +100,10 @@
                     <p>Today, I focus on solving real technical problems—whether that's automating workflows, securing infrastructure, or helping teams turn messy requirements into working systems. I enjoy the process of diagnosing issues just as much as delivering solutions.</p>
                     <p>I'm currently a Management Information Systems student with a strong focus on cybersecurity and systems thinking. I'm Security+ certified, and most of my experience comes from hands-on work: building, breaking, and operating real systems.</p>
                 </div>
+                <div class="about__callout animate-on-scroll">
+                    <h3 class="about__callout-title">How I Use AI</h3>
+                    <p>I treat AI as a force multiplier, not a crutch. I build multi-agent systems with clear separation between planning and execution — a controller decides strategy, specialized workers carry it out. I use AI to accelerate engineering work while keeping security judgment where it belongs: with the engineer. The goal is better output, faster — not less thinking.</p>
+                </div>
             </div>
         </section>
 
@@ -152,6 +156,31 @@
             </div>
         </section>
 
+        <!-- Community & Mentorship Section -->
+        <section id="community" class="community section">
+            <div class="container">
+                <h2 class="section__title">Community & Mentorship</h2>
+                <div class="community__grid animate-on-scroll">
+                    <div class="community__item">
+                        <h3 class="community__item-title">Prompt Engineering Curriculum</h3>
+                        <p class="community__item-desc">Created and delivered a structured prompt engineering lesson for students participating in the NBA Tech Challenge — bridging the gap between AI capability and practical application.</p>
+                    </div>
+                    <div class="community__item">
+                        <h3 class="community__item-title">Peer Mentorship</h3>
+                        <p class="community__item-desc">Mentoring non-technical peers on AI tools, app development fundamentals, and how to approach technical problems — making technology accessible beyond CS majors.</p>
+                    </div>
+                    <div class="community__item">
+                        <h3 class="community__item-title">Cyber Program Development</h3>
+                        <p class="community__item-desc">Contributing to cybersecurity program development research at TSU — helping shape curriculum and lab infrastructure for the university's growing cyber initiative.</p>
+                    </div>
+                    <div class="community__item">
+                        <h3 class="community__item-title">Industry Engagement</h3>
+                        <p class="community__item-desc">Active engagement with defense and cybersecurity organizations including MITRE, Lockheed Martin, HII, and Leidos — building connections across the GovTech and defense ecosystem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Projects Section -->
         <section id="projects" class="projects section">
             <div class="container">
@@ -160,7 +189,52 @@
 
                 <div class="projects__list">
 
-                    <!-- Project 1: R-Value CRM -->
+                    <!-- Project 1: TSU Cyber Lab -->
+                    <article class="project project--featured animate-on-scroll">
+                        <header class="project__header">
+                            <div class="project__title-row">
+                                <h3 class="project__title">TSU Cybersecurity Teaching Lab</h3>
+                                <span class="tag tag--status-complete">Active</span>
+                            </div>
+                            <div class="project__stack">
+                                <span class="tag">Cisco Catalyst 9200</span>
+                                <span class="tag">Catalyst 8200</span>
+                                <span class="tag">Meraki MS130</span>
+                                <span class="tag">Firepower 1000</span>
+                                <span class="tag">UCS C220</span>
+                            </div>
+                        </header>
+
+                        <div class="project__content">
+                            <div class="project__section">
+                                <h4 class="project__section-title">Problem</h4>
+                                <p>Texas Southern University had no dedicated cybersecurity lab. Students lacked access to enterprise networking equipment for hands-on learning — limiting practical skill development in a field that demands it.</p>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">Architecture</h4>
+                                <p>Multi-layer campus network with Cisco Catalyst 9200/8200 core switching, Meraki MS130 access layer, and Firepower 1000 series for threat inspection. UCS C220 rack servers provide compute for lab workloads. Full VLAN segmentation isolates student traffic from production.</p>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">What I Built</h4>
+                                <ul class="project__list">
+                                    <li>Physical and logical network infrastructure from bare metal to operational</li>
+                                    <li>VLAN segmentation architecture separating lab, management, and campus traffic</li>
+                                    <li>Network diagrams and topology documentation for the full environment</li>
+                                    <li>Configuration documentation and handoff guide for program continuity</li>
+                                    <li>Rack installation, cabling, and hardware commissioning</li>
+                                </ul>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">Security</h4>
+                                <p>Firepower IPS/IDS providing real-time threat inspection. VLAN-based network segmentation enforcing least-privilege access between zones. Dedicated management VLAN for infrastructure administration. Built to support future expansion of the cyber program.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 2: R-Value CRM -->
                     <article class="project project--featured animate-on-scroll">
                         <header class="project__header">
                             <div class="project__title-row">
@@ -210,7 +284,97 @@
                         </footer>
                     </article>
 
-                    <!-- Project 2: VPS Infrastructure -->
+                    <!-- Project 3: AI Cybersecurity Assistant -->
+                    <article class="project animate-on-scroll">
+                        <header class="project__header">
+                            <div class="project__title-row">
+                                <h3 class="project__title">AI Cybersecurity Assistant</h3>
+                                <span class="tag tag--status">In Progress</span>
+                            </div>
+                            <div class="project__stack">
+                                <span class="tag">n8n</span>
+                                <span class="tag">Claude</span>
+                                <span class="tag">GPT</span>
+                                <span class="tag">Gemini</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">VPS</span>
+                            </div>
+                        </header>
+
+                        <div class="project__content">
+                            <div class="project__section">
+                                <h4 class="project__section-title">Problem</h4>
+                                <p>Security workflows involve repetitive analysis across logs, alerts, and documentation. Individual AI models each have strengths, but no single model handles every task well. Needed an orchestration layer that routes work intelligently.</p>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">Architecture</h4>
+                                <p>Multi-agent system built on n8n with a controller model that routes tasks to specialized workers. Claude, GPT, and Gemini are selected per-task based on capability fit. VPS-hosted with Docker, designed for clear separation of planning vs execution.</p>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">What I Built</h4>
+                                <ul class="project__list">
+                                    <li>Controller agent that analyzes incoming tasks and routes to the best-fit model</li>
+                                    <li>Log analysis pipeline for parsing and surfacing security-relevant events</li>
+                                    <li>Security study assistant for certification prep and concept tutoring</li>
+                                    <li>Automated workflows replacing manual, repetitive security operations</li>
+                                    <li>Planning/execution separation — controller decides strategy, workers execute</li>
+                                </ul>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">Current State</h4>
+                                <p>Core orchestration pipeline operational. Controller routing logic handles task classification and model selection. Expanding worker agents for broader security automation coverage. Designed as a tool, not a replacement — AI augments engineering judgment.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 4: NBA Tech Challenge -->
+                    <article class="project animate-on-scroll">
+                        <header class="project__header">
+                            <div class="project__title-row">
+                                <h3 class="project__title">Rockets Loyalty+ — NBA Beyond the Ball</h3>
+                                <span class="tag tag--status-complete">1st Place</span>
+                            </div>
+                            <div class="project__stack">
+                                <span class="tag">Next.js</span>
+                                <span class="tag">Supabase</span>
+                                <span class="tag">Tailwind</span>
+                                <span class="tag">AI-Assisted Ideation</span>
+                            </div>
+                        </header>
+
+                        <div class="project__content">
+                            <div class="project__section">
+                                <h4 class="project__section-title">Problem</h4>
+                                <p>The NBA Beyond the Ball Tech Challenge asked teams to build a fan engagement solution for the Houston Rockets. Needed to ship a working product under competition time pressure while leading a team with mixed technical backgrounds.</p>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">Architecture</h4>
+                                <p>Next.js frontend with Supabase backend for auth and data persistence. Tailwind for rapid UI development. AI-assisted ideation during the design phase to accelerate user research and feature scoping.</p>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">What I Built</h4>
+                                <ul class="project__list">
+                                    <li>Led development as Lead Developer — 20+ hours of hands-on coding</li>
+                                    <li>Built user personas and empathy maps to ground feature decisions in real fan needs</li>
+                                    <li>Designed and led a prompt engineering lesson for participating students</li>
+                                    <li>Full-stack fan loyalty application with gamification and reward mechanics</li>
+                                    <li>Managed team delivery, technical direction, and final presentation</li>
+                                </ul>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">Result</h4>
+                                <p>Won 1st place in the NBA Beyond the Ball Tech Challenge. Demonstrated ability to ship under pressure, lead cross-functional teams, and combine technical execution with user-centered design thinking.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 5: VPS Infrastructure -->
                     <article class="project animate-on-scroll">
                         <header class="project__header">
                             <h3 class="project__title">Production VPS Infrastructure</h3>
@@ -291,6 +455,30 @@
                             </div>
                             <span class="certification__status certification__status--pending">In Progress</span>
                         </li>
+                        <li class="certification">
+                            <div class="certification__icon certification__icon--planned">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <div class="certification__info">
+                                <span class="certification__name">AWS Cloud Practitioner</span>
+                                <span class="certification__detail">CLF-C02</span>
+                            </div>
+                            <span class="certification__status certification__status--planned">Planned</span>
+                        </li>
+                        <li class="certification">
+                            <div class="certification__icon certification__icon--planned">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <div class="certification__info">
+                                <span class="certification__name">AWS AI Practitioner</span>
+                                <span class="certification__detail">AIF-C01</span>
+                            </div>
+                            <span class="certification__status certification__status--planned">Planned</span>
+                        </li>
                     </ul>
                 </div>
 
@@ -333,6 +521,17 @@
                         </ul>
                     </div>
                 </div>
+
+                <!-- What I'm Learning Now -->
+                <div class="learning animate-on-scroll">
+                    <h3 class="skills__section-title">What I'm Learning Now</h3>
+                    <div class="learning__items">
+                        <span class="learning__tag">CompTIA CySA+</span>
+                        <span class="learning__tag">AWS Cloud Architecture</span>
+                        <span class="learning__tag">Docker Security</span>
+                        <span class="learning__tag">Container Hardening</span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -368,6 +567,43 @@
                             <p class="experience-item__description">Supported IT infrastructure planning for solar electrification projects impacting 5,000+ households. Maintained secure project databases and collaborated with international engineers.</p>
                         </div>
                     </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog section">
+            <div class="container">
+                <h2 class="section__title">Writing</h2>
+                <div class="blog__grid">
+                    <article class="blog-card blog-card--ready animate-on-scroll">
+                        <span class="blog-card__label">Infrastructure</span>
+                        <h3 class="blog-card__title">How I Helped Build TSU's Cyber Lab from Scratch</h3>
+                        <p class="blog-card__excerpt">From bare rack to operational teaching lab — the process, decisions, and lessons from building a university cybersecurity environment on enterprise Cisco gear.</p>
+                        <span class="blog-card__meta">Coming Soon</span>
+                    </article>
+                    <article class="blog-card animate-on-scroll">
+                        <span class="blog-card__label">AI + Security</span>
+                        <h3 class="blog-card__title">AI as a Security Tool, Not a Shortcut</h3>
+                        <p class="blog-card__excerpt">Why treating AI as a force multiplier — not a replacement for judgment — produces better security outcomes.</p>
+                        <span class="blog-card__meta">Coming Soon</span>
+                    </article>
+                    <article class="blog-card animate-on-scroll">
+                        <span class="blog-card__label">Field Work</span>
+                        <h3 class="blog-card__title">What I Learned Installing 600 UPS Systems</h3>
+                        <p class="blog-card__excerpt">Lessons from large-scale hardware deployment across a school district — logistics, troubleshooting, and working at scale.</p>
+                        <span class="blog-card__meta">Coming Soon</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Focus Section -->
+        <section id="career-focus" class="career-focus section">
+            <div class="container">
+                <h2 class="section__title">Career Focus</h2>
+                <div class="career-focus__content animate-on-scroll">
+                    <p>I'm targeting roles in cybersecurity infrastructure, cloud security, and GovTech/defense-adjacent environments. My experience is hands-on — building secure networks with enterprise Cisco gear, shipping production applications with real access controls, and developing AI-powered security tooling that augments human judgment. I want to bring that same build-and-secure mindset to teams protecting critical systems.</p>
                 </div>
             </div>
         </section>
@@ -432,7 +668,7 @@
     <!-- Footer -->
     <footer class="site-footer">
         <div class="container">
-            <p>&copy; 2025 Jaedon Chin. All rights reserved.</p>
+            <p>&copy; 2026 Jaedon Chin. All rights reserved.</p>
         </div>
     </footer>
 
