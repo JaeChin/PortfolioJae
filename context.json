@@ -1,0 +1,250 @@
+{
+  "meta": {
+    "version": "1.0",
+    "lastUpdated": "2026-01-16"
+  },
+  "profile": {
+    "name": "Jaedon Chin",
+    "title": "Cybersecurity Infrastructure Support Technician",
+    "location": "Houston, TX",
+    "email": "jaechin9@gmail.com",
+    "github": "https://github.com/JaeChin",
+    "linkedin": "https://www.linkedin.com/in/jaedonchin/",
+    "availableFor": ["Full-time roles", "Internships", "Contract work"],
+    "targetRoles": [
+      "Cybersecurity Engineer",
+      "Infrastructure Engineer", 
+      "Cloud Security Engineer",
+      "Security Operations Center (SOC) Analyst",
+      "Network Security Engineer"
+    ],
+    "targetSalary": "$80,000+",
+    "workAuthorization": "US Citizen",
+    "willingToRelocate": true
+  },
+  "education": {
+    "university": "Texas Southern University",
+    "degree": "Bachelor of Business Administration",
+    "major": "Management Information Systems (MIS)",
+    "graduationDate": "May 2026",
+    "gpa": null,
+    "honors": [
+      "President's List (2x)",
+      "Dean's List (3x)"
+    ],
+    "relevantCoursework": [
+      "Information Security",
+      "Database Management",
+      "Systems Analysis",
+      "Network Administration"
+    ]
+  },
+  "certifications": [
+    {
+      "name": "CompTIA Security+",
+      "status": "Active",
+      "dateObtained": "2024",
+      "expirationDate": "2027",
+      "verificationCode": null
+    },
+    {
+      "name": "CompTIA CySA+",
+      "status": "In Progress",
+      "expectedDate": "2026"
+    }
+  ],
+  "skills": {
+    "infrastructure": {
+      "level": "Intermediate-Advanced",
+      "technologies": [
+        "Docker / Docker Compose",
+        "Linux (Ubuntu/Debian)",
+        "Traefik reverse proxy",
+        "Cloudflare (DNS, Tunnels, Zero Trust)",
+        "VPS management",
+        "TCP/IP, DNS, DHCP"
+      ]
+    },
+    "networking": {
+      "level": "Intermediate-Advanced",
+      "technologies": [
+        "Cisco Catalyst switches",
+        "Cisco Meraki",
+        "Cisco Firepower firewalls",
+        "Network segmentation",
+        "VLAN configuration",
+        "Wireshark packet analysis"
+      ]
+    },
+    "security": {
+      "level": "Intermediate",
+      "technologies": [
+        "Network security architecture",
+        "Risk assessment",
+        "Incident response fundamentals",
+        "Firewall configuration",
+        "Row Level Security (RLS)",
+        "Zero Trust architecture"
+      ]
+    },
+    "development": {
+      "level": "Intermediate",
+      "technologies": [
+        "TypeScript",
+        "Next.js (App Router)",
+        "Python",
+        "PostgreSQL",
+        "Supabase",
+        "Git version control",
+        "Playwright E2E testing",
+        "n8n workflow automation"
+      ]
+    },
+    "softSkills": [
+      "Technical documentation",
+      "Problem diagnosis",
+      "Cross-functional collaboration",
+      "Technical presentations"
+    ]
+  },
+  "experience": [
+    {
+      "title": "Cybersecurity Infrastructure Support Technician",
+      "organization": "Texas Southern University",
+      "location": "Houston, TX",
+      "startDate": "April 2025",
+      "endDate": "Present",
+      "type": "Part-time",
+      "responsibilities": [
+        "Lead student technician supporting the university's first cybersecurity lab",
+        "Configure and maintain Cisco networking equipment (Catalyst switches, Meraki, Firepower firewalls)",
+        "Implement network segmentation and security controls",
+        "Physical lab buildouts and infrastructure troubleshooting",
+        "Document network configurations and procedures"
+      ],
+      "technologies": ["Cisco Catalyst", "Cisco Meraki", "Cisco Firepower", "Network segmentation"]
+    },
+    {
+      "title": "IT Technician – UPS Systems Installation",
+      "organization": "JosephOne Technologies / Clear Creek ISD",
+      "location": "Houston, TX",
+      "startDate": "August 2025",
+      "endDate": "Present",
+      "type": "Contract",
+      "responsibilities": [
+        "Installed and configured 600+ enterprise UPS systems across district campuses",
+        "Enabled centralized monitoring and power redundancy for classrooms and labs",
+        "Coordinated with facilities teams for installation scheduling",
+        "Tested and verified system functionality post-installation"
+      ],
+      "technologies": ["Enterprise UPS systems", "Power monitoring", "Network infrastructure"]
+    },
+    {
+      "title": "World Bank Project Intern",
+      "organization": "National Electrification Project",
+      "location": "International",
+      "startDate": "June 2022",
+      "endDate": "August 2022",
+      "type": "Internship",
+      "responsibilities": [
+        "Supported IT infrastructure planning for solar electrification projects impacting 5,000+ households",
+        "Maintained secure project databases",
+        "Collaborated with international engineers on project documentation",
+        "Assisted with data collection and reporting"
+      ],
+      "technologies": ["Database management", "Project documentation", "International collaboration"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "R-Value CRM",
+      "status": "In Progress",
+      "description": "Full-stack CRM platform for service contractors to manage operations, track job costs, and analyze profitability",
+      "problem": "Service contractors manage operations across texts, spreadsheets, and disconnected apps with no visibility into job costs, labor time, or profitability",
+      "technologies": ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Tailwind CSS", "Playwright"],
+      "features": [
+        "Kanban pipeline with drag-and-drop status management",
+        "One-click lead-to-job conversion with bi-directional linking",
+        "Time tracking system (start/stop per job, worker-based)",
+        "Cost tracking with auto-calculated labor from time entries",
+        "Profit analysis comparing estimated vs actual costs",
+        "Full activity audit trail with system-generated notes"
+      ],
+      "architecture": "Next.js App Router with TypeScript frontend. Supabase backend (PostgreSQL + Auth) with Row Level Security. Component-based architecture with strict client/server separation.",
+      "currentState": "Core CRM complete and E2E tested. Database schema stabilized with migrations. RLS policies configured.",
+      "githubUrl": "https://github.com/JaeChin"
+    },
+    {
+      "name": "Production VPS Infrastructure",
+      "status": "Complete",
+      "description": "Secure, reproducible platform for hosting web applications and services",
+      "problem": "Needed a secure, reproducible platform to host web applications. Managed solutions too expensive; manual server config too fragile.",
+      "technologies": ["Docker", "Docker Compose", "Traefik", "Cloudflare", "Ubuntu", "Let's Encrypt"],
+      "features": [
+        "Traefik config with automatic Let's Encrypt certificate management",
+        "Cloudflare Tunnels for zero-exposed-port ingress",
+        "Container network isolation between services",
+        "Automated backup scripts for persistent data"
+      ],
+      "security": [
+        "Fail2ban for SSH protection",
+        "UFW firewall with default-deny policy",
+        "Non-root container execution",
+        "Secrets in environment files excluded from version control"
+      ],
+      "architecture": "Single VPS running containerized services behind Traefik reverse proxy. Cloudflare handles DNS, DDoS protection, and edge SSL. All infrastructure defined in Docker Compose.",
+      "githubUrl": "https://github.com/JaeChin"
+    }
+  ],
+  "achievements": [
+    {
+      "title": "1st Place — Beyond the Ball",
+      "category": "Competition",
+      "organization": "NBA Tech Challenge",
+      "description": "Won first place in NBA technology innovation competition"
+    },
+    {
+      "title": "Conference Presenter",
+      "category": "Speaking",
+      "description": "Technical presentation and demonstration at professional conference"
+    },
+    {
+      "title": "Title III Recognition",
+      "category": "Program",
+      "description": "Federal STEM program achievement recognition"
+    },
+    {
+      "title": "President's & Dean's List",
+      "category": "Academic",
+      "description": "2x President's List, 3x Dean's List academic honors"
+    }
+  ],
+  "fitCheckCriteria": {
+    "strongFit": [
+      "Cybersecurity roles (SOC Analyst, Security Engineer, Penetration Testing)",
+      "Infrastructure/DevOps roles with security focus",
+      "Cloud security positions (AWS, Azure, GCP)",
+      "Network engineering with Cisco equipment",
+      "GovTech or defense-adjacent organizations",
+      "Roles requiring Security+ certification",
+      "Entry-level to mid-level positions"
+    ],
+    "moderateFit": [
+      "Full-stack development with security requirements",
+      "IT support roles with growth potential",
+      "Technical consulting",
+      "Roles requiring 1-3 years experience"
+    ],
+    "weakFit": [
+      "Senior/Staff level positions (5+ years required)",
+      "Pure frontend development without security",
+      "Non-technical management roles",
+      "Roles requiring clearance (would need sponsorship)"
+    ],
+    "dealbreakers": [
+      "Must be available after May 2026 graduation for full-time",
+      "Currently based in Houston, TX",
+      "Seeking $80k+ for full-time positions"
+    ]
+  }
+}

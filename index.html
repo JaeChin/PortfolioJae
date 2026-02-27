@@ -21,6 +21,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ai-chat.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -49,10 +50,10 @@
                 <h1 class="hero__title">Jaedon Chin</h1>
                 <p class="hero__subtitle">Cybersecurity | Infrastructure | Systems</p>
                 <p class="hero__meta">Houston, TX · MIS @ Texas Southern · May 2026 · <span class="hero__cert">Security+</span></p>
-                <p class="hero__tagline">Building secure, automated infrastructure from the ground up.</p>
+                <p class="hero__tagline">I build things that work, secure them so they stay working, and automate the rest.</p>
                 <div class="hero__cta">
-                    <a href="#projects" class="btn btn--primary">View Projects</a>
-                    <a href="#contact" class="btn btn--secondary">Get in Touch</a>
+                    <a href="#projects" class="btn btn--primary">See What I've Built</a>
+                    <a href="#contact" class="btn btn--secondary">Let's Talk</a>
                 </div>
             </div>
         </section>
@@ -62,9 +63,9 @@
             <div class="container">
                 <h2 class="section__title">About</h2>
                 <div class="about__content">
-                    <p>I've been drawn to technology for as long as I can remember. I started building and taking apart computers as a kid, and that curiosity turned into a habit of understanding how systems work, where they break, and how to make them better.</p>
-                    <p>Today, I focus on solving real technical problems—whether that's automating workflows, securing infrastructure, or helping teams turn messy requirements into working systems. I enjoy the process of diagnosing issues just as much as delivering solutions.</p>
-                    <p>I'm currently a Management Information Systems student with a strong focus on cybersecurity and systems thinking. I'm Security+ certified, and most of my experience comes from hands-on work: building, breaking, and operating real systems.</p>
+                    <p>I've been taking things apart since I was a kid—computers, networks, anything I could get my hands on. That habit never went away. Now I just get paid to put them back together (and make sure nobody else can break in).</p>
+                    <p>My thing is making systems actually work. Not just "it runs on my machine" work, but production-grade, someone-is-depending-on-this work. I've built CRMs, deployed infrastructure, configured enterprise networks, and automated the boring stuff so I can focus on the interesting problems.</p>
+                    <p>Currently finishing my MIS degree at Texas Southern with Security+ in hand and CySA+ on deck. But honestly, most of what I know came from breaking things in my homelab at 2am and figuring out how to fix them before morning.</p>
                 </div>
             </div>
         </section>
@@ -74,32 +75,32 @@
             <div class="container">
                 <h2 class="section__title">Recognition</h2>
                 <div class="achievements__grid">
-                    <article class="achievement" data-achievement="btb">
-                        <!-- Optional image: <img src="assets/achievements/btb.jpg" class="achievement__image" alt="Beyond the Ball Award"> -->
+                    <article class="achievement achievement--has-image" data-achievement="btb" style="--achievement-bg: url('../assets/achievements/btb.jpg');">
+                        <div class="achievement__image-overlay"></div>
                         <div class="achievement__content">
                             <span class="achievement__label">Competition</span>
                             <h3 class="achievement__title">1st Place — Beyond the Ball</h3>
                             <p class="achievement__subtitle">NBA Tech Challenge</p>
                         </div>
                     </article>
-                    <article class="achievement" data-achievement="speaking">
-                        <!-- Optional image: <img src="assets/achievements/speaking.jpg" class="achievement__image" alt="Conference Speaking"> -->
+                    <article class="achievement achievement--has-image" data-achievement="speaking" style="--achievement-bg: url('../assets/achievements/speaking.jpg');">
+                        <div class="achievement__image-overlay"></div>
                         <div class="achievement__content">
                             <span class="achievement__label">Speaking</span>
                             <h3 class="achievement__title">Conference Presenter</h3>
                             <p class="achievement__subtitle">Technical presentation and demonstration</p>
                         </div>
                     </article>
-                    <article class="achievement" data-achievement="title3">
-                        <!-- Optional image: <img src="assets/achievements/title3.jpg" class="achievement__image" alt="Title III Recognition"> -->
+                    <article class="achievement achievement--has-image" data-achievement="title3" style="--achievement-bg: url('../assets/achievements/title3.jpg');">
+                        <div class="achievement__image-overlay"></div>
                         <div class="achievement__content">
                             <span class="achievement__label">Program</span>
                             <h3 class="achievement__title">Title III Recognition</h3>
                             <p class="achievement__subtitle">Federal STEM program achievement</p>
                         </div>
                     </article>
-                    <article class="achievement" data-achievement="academic">
-                        <!-- Optional image: <img src="assets/achievements/academic.jpg" class="achievement__image" alt="Academic Honors"> -->
+                    <article class="achievement achievement--has-image" data-achievement="academic" style="--achievement-bg: url('../assets/achievements/academic.jpg');">
+                        <div class="achievement__image-overlay"></div>
                         <div class="achievement__content">
                             <span class="achievement__label">Academic</span>
                             <h3 class="achievement__title">President's & Dean's List</h3>
@@ -114,7 +115,7 @@
         <section id="projects" class="projects section">
             <div class="container">
                 <h2 class="section__title">Projects</h2>
-                <p class="section__subtitle">Systems I've designed and built. Focus on real problems, clear architecture, and production-grade implementation.</p>
+                <p class="section__subtitle">Stuff I've actually built and shipped. Not tutorials, not toy projects—real systems solving real problems.</p>
 
                 <div class="projects__list">
 
@@ -137,34 +138,34 @@
                         <div class="project__content">
                             <div class="project__section">
                                 <h4 class="project__section-title">Problem</h4>
-                                <p>Service contractors manage operations across texts, spreadsheets, and disconnected apps. No visibility into job costs, labor time, or profitability. Off-the-shelf CRMs are too generic or too complex for small teams.</p>
+                                <p>Insulation contractors were running their businesses out of text threads, spreadsheets, and sticky notes. They had no idea if a job was profitable until it was done—and sometimes not even then. Generic CRMs didn't fit their workflow, and the industry-specific ones cost a fortune.</p>
                             </div>
 
                             <div class="project__section">
                                 <h4 class="project__section-title">Architecture</h4>
-                                <p>Next.js App Router with TypeScript frontend. Supabase backend (PostgreSQL + Auth) with Row Level Security. Component-based architecture with strict client/server separation. Playwright for E2E testing.</p>
+                                <p>Next.js App Router frontend talking to Supabase (Postgres + Auth). Row Level Security handles multi-tenancy so each contractor only sees their own data. Strict client/server split—no "use client" where it doesn't belong. Playwright catches regressions before they hit production.</p>
                             </div>
 
                             <div class="project__section">
                                 <h4 class="project__section-title">What I Built</h4>
                                 <ul class="project__list">
-                                    <li>Kanban pipeline with drag-and-drop status management</li>
-                                    <li>One-click lead-to-job conversion with bi-directional linking</li>
-                                    <li>Time tracking system (start/stop per job, worker-based, no auth required)</li>
-                                    <li>Cost tracking with auto-calculated labor from time entries</li>
-                                    <li>Profit analysis comparing estimated vs actual costs</li>
-                                    <li>Full activity audit trail with system-generated notes</li>
+                                    <li>Drag-and-drop kanban for tracking leads through the pipeline</li>
+                                    <li>One-click lead → job conversion that keeps everything linked</li>
+                                    <li>Time tracking that workers can use without logging in (they just need the job link)</li>
+                                    <li>Real-time cost tracking that calculates labor automatically from time entries</li>
+                                    <li>Profit dashboard showing estimated vs. actual—no more guessing</li>
+                                    <li>Activity feed that logs everything so you know who did what and when</li>
                                 </ul>
                             </div>
 
                             <div class="project__section">
                                 <h4 class="project__section-title">Current State</h4>
-                                <p>Core CRM complete and E2E tested. Database schema stabilized with migrations. RLS policies configured. UI polish and landing page in progress.</p>
+                                <p>Core features are done and tested. Schema is locked down with migrations. Now polishing the UI and building out the marketing site. Already have contractors using it.</p>
                             </div>
                         </div>
 
                         <footer class="project__footer">
-                            <a href="https://github.com/JaeChin" class="project__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <a href="https://www.rvalueops.com/marketing" class="project__link" target="_blank" rel="noopener noreferrer">View Website</a>
                         </footer>
                     </article>
 
@@ -183,32 +184,80 @@
                         <div class="project__content">
                             <div class="project__section">
                                 <h4 class="project__section-title">Problem</h4>
-                                <p>Needed a secure, reproducible platform to host web applications and services. Managed solutions too expensive; manual server config too fragile.</p>
+                                <p>I needed somewhere to run my projects that wasn't going to cost me $50/month per app. Vercel and Railway are great until you're running five things. Manual server setup works until you forget how you configured it six months ago.</p>
                             </div>
 
                             <div class="project__section">
                                 <h4 class="project__section-title">Architecture</h4>
-                                <p>Single VPS running containerized services behind Traefik reverse proxy. Cloudflare handles DNS, DDoS protection, and edge SSL. All infrastructure defined in Docker Compose.</p>
+                                <p>One VPS, everything containerized. Traefik sits in front and routes traffic to the right container based on domain. Cloudflare handles the public-facing stuff—DNS, SSL termination, DDoS protection. The whole thing is defined in Compose files so I can blow it away and rebuild it in minutes.</p>
                             </div>
 
                             <div class="project__section">
                                 <h4 class="project__section-title">What I Built</h4>
                                 <ul class="project__list">
-                                    <li>Traefik config with automatic Let's Encrypt certificate management</li>
-                                    <li>Cloudflare Tunnels for zero-exposed-port ingress</li>
-                                    <li>Container network isolation between services</li>
-                                    <li>Automated backup scripts for persistent data</li>
+                                    <li>Traefik reverse proxy with automatic Let's Encrypt certs—no manual renewal</li>
+                                    <li>Cloudflare Tunnels so nothing is exposed directly to the internet</li>
+                                    <li>Network isolation between containers—one compromised service can't reach the others</li>
+                                    <li>Automated backups that actually get tested (learned that lesson the hard way)</li>
                                 </ul>
                             </div>
 
                             <div class="project__section">
                                 <h4 class="project__section-title">Security</h4>
-                                <p>Fail2ban for SSH protection. UFW firewall with default-deny policy. Non-root container execution. Secrets in environment files excluded from version control.</p>
+                                <p>Fail2ban watching SSH. UFW set to deny by default. Containers run as non-root with dropped capabilities. Secrets live in env files that never touch git. It's not paranoia if they're actually scanning your ports.</p>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Project 3: Pandora -->
+                    <article class="project project--featured">
+                        <header class="project__header">
+                            <div class="project__title-row">
+                                <h3 class="project__title">Pandora — Local-First AI Voice Assistant</h3>
+                                <span class="tag tag--status">In Progress</span>
+                            </div>
+                            <div class="project__stack">
+                                <span class="tag">Python</span>
+                                <span class="tag">faster-whisper</span>
+                                <span class="tag">Ollama</span>
+                                <span class="tag">Kokoro TTS</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">WireGuard</span>
+                                <span class="tag">Next.js</span>
+                            </div>
+                        </header>
+
+                        <div class="project__content">
+                            <div class="project__section">
+                                <h4 class="project__section-title">Problem</h4>
+                                <p>Cloud voice assistants are a privacy nightmare, add noticeable latency, and get expensive fast. I wanted something that processes voice locally with sub-second responses, but can still tap into cloud APIs when the local model isn't enough—all without giving an AI unrestricted access to my infrastructure.</p>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">Architecture</h4>
+                                <p>Two-machine setup. My RTX 3070 handles the real-time voice pipeline (wake word → speech-to-text → LLM → text-to-speech) within 8GB VRAM constraints. VPS runs the persistent stuff—Postgres, n8n for automation, Qdrant for semantic search—connected over an encrypted WireGuard tunnel. About 60% of queries stay local; the rest get routed to cloud APIs intelligently. Agent Zero on the VPS handles long-running autonomous tasks.</p>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">What I Built</h4>
+                                <ul class="project__list">
+                                    <li>Custom voice pipeline: faster-whisper (INT8) → Qwen3 via Ollama → Kokoro TTS, ~3s end-to-end</li>
+                                    <li>Trained my own wake word model using synthetic speech data via openWakeWord</li>
+                                    <li>Hybrid query router that decides local LLM vs. semantic cache vs. cloud API based on complexity</li>
+                                    <li>Defense-in-depth security: API wrapper with explicit container allowlists, rate limiting, immutable audit logs</li>
+                                    <li>WireGuard tunnel with all services bound to tunnel IP—nothing exposed on public interfaces</li>
+                                    <li>Hardened Docker containers: non-root, dropped capabilities, read-only filesystems, resource limits</li>
+                                </ul>
+                            </div>
+
+                            <div class="project__section">
+                                <h4 class="project__section-title">Security</h4>
+                                <p>The AI never touches the Docker socket directly. Every container operation goes through an allowlist with rate limiting, and audit logs are stored separately where the AI can't modify them. Network is segmented by trust level—WireGuard for internal traffic, Cloudflare Tunnel with Zero Trust for anything external. I've documented the threat model with specific mitigations for prompt injection, container escape, and secret leakage.</p>
                             </div>
                         </div>
 
                         <footer class="project__footer">
-                            <a href="https://github.com/JaeChin" class="project__link" target="_blank" rel="noopener noreferrer">GitHub</a>
+                            <span class="project__link project__link--coming-soon">GitHub coming soon</span>
                         </footer>
                     </article>
 
@@ -283,19 +332,19 @@
                         <h3 class="experience-item__title">Cybersecurity Infrastructure Support Technician</h3>
                         <p class="experience-item__org">Texas Southern University</p>
                         <p class="experience-item__period">Apr 2025 - Present</p>
-                        <p class="experience-item__description">Lead student technician supporting the university's first cybersecurity lab. Configure Cisco networking gear (Catalyst, Meraki, Firepower). Implement network segmentation and security controls.</p>
+                        <p class="experience-item__description">I'm the lead student tech for TSU's first dedicated cybersecurity lab. Basically, I'm the one racking Cisco gear, configuring VLANs, and making sure the Firepower doesn't block legitimate traffic. When something breaks at 4pm on a Friday, I'm the one who stays to fix it.</p>
                     </article>
                     <article class="experience-item">
                         <h3 class="experience-item__title">IT Technician – UPS Systems Installation</h3>
                         <p class="experience-item__org">JosephOne Technologies / CCISD</p>
                         <p class="experience-item__period">Aug 2025 - Present</p>
-                        <p class="experience-item__description">Installed and configured 600+ enterprise UPS systems across district campuses. Enabled centralized monitoring and power redundancy for classrooms and labs.</p>
+                        <p class="experience-item__description">Deployed 600+ enterprise UPS units across an entire school district. That's a lot of battery backups, a lot of cable management, and a lot of classrooms that don't lose their work when the power flickers anymore. Set up centralized monitoring so IT can see battery health across every campus from one dashboard.</p>
                     </article>
                     <article class="experience-item">
                         <h3 class="experience-item__title">World Bank Project Intern</h3>
                         <p class="experience-item__org">National Electrification Project</p>
                         <p class="experience-item__period">Jun 2022 - Aug 2022</p>
-                        <p class="experience-item__description">Supported IT infrastructure planning for solar electrification projects impacting 5,000+ households. Maintained secure project databases and collaborated with international engineers.</p>
+                        <p class="experience-item__description">Worked on IT infrastructure planning for solar electrification projects in Liberia—the kind of work where your database decisions affect whether 5,000+ households get reliable power. Collaborated with engineers from three continents and learned that "international deadline" means something different to everyone.</p>
                     </article>
                 </div>
             </div>
@@ -305,7 +354,7 @@
         <section id="contact" class="contact section">
             <div class="container">
                 <h2 class="section__title">Contact</h2>
-                <p class="contact__intro">Interested in working together or have questions? Reach out.</p>
+                <p class="contact__intro">Got a project, a question, or just want to talk shop? I'm always down to connect.</p>
                 <div class="contact__links">
                     <a href="https://github.com/JaeChin" class="contact__link" target="_blank" rel="noopener noreferrer">
                         GitHub
@@ -328,6 +377,8 @@
         </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="js/main.js"></script>
+    <script src="js/ai-chat.js"></script>
 </body>
 </html>
