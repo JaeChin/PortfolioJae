@@ -89,9 +89,17 @@
 
             const observer = new IntersectionObserver(observerCallback, observerOptions);
 
+            // FIX: Elements already in the viewport on page load (e.g. hero)
+            // won't reliably trigger the observer — show them immediately.
             animatedElements.forEach(el => {
-                observer.observe(el);
+                const rect = el.getBoundingClientRect();
+                if (rect.top < window.innerHeight && rect.bottom > 0) {
+                    el.classList.add('is-visible');
+                } else {
+                    observer.observe(el);
+                }
             });
+
         } else {
             // Fallback: show all elements immediately
             animatedElements.forEach(el => {
@@ -104,6 +112,70 @@
             el.classList.add('is-visible', 'no-animation');
         });
     }
+
+    // ==========================================================================
+    // Animated Tabs (Projects)
+    // ==========================================================================
+
+    const tabsContainer = document.querySelector('.tabs');
+
+    if (tabsContainer) {
+        const tabBtns = tabsContainer.querySelectorAll('.tabs__btn');
+        const tabPanels = tabsContainer.querySelectorAll('.tabs__panel');
+        const indicator = tabsContainer.querySelector('.tabs__indicator');
+
+        function positionIndicator(btn) {
+            if (!indicator || !btn) return;
+            indicator.style.width = btn.offsetWidth + 'px';
+            indicator.style.transform = 'translateX(' + (btn.offsetLeft - 4) + 'px)';
+        }
+
+        function switchTab(targetId) {
+            tabBtns.forEach(function(b) { b.classList.remove('is-active'); });
+            tabPanels.forEach(function(p) { p.classList.remove('is-active'); });
+
+            var activeBtn = tabsContainer.querySelector('.tabs__btn[data-tab="' + targetId + '"]');
+            var activePanel = tabsContainer.querySelector('.tabs__panel[data-panel="' + targetId + '"]');
+
+            if (activeBtn) activeBtn.classList.add('is-active');
+            if (activePanel) activePanel.classList.add('is-active');
+            positionIndicator(activeBtn);
+        }
+
+        tabBtns.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                switchTab(btn.getAttribute('data-tab'));
+            });
+        });
+
+        var firstActive = tabsContainer.querySelector('.tabs__btn.is-active');
+        if (firstActive) {
+            requestAnimationFrame(function() { positionIndicator(firstActive); });
+        }
+
+        window.addEventListener('resize', function() {
+            var current = tabsContainer.querySelector('.tabs__btn.is-active');
+            if (current) positionIndicator(current);
+        });
+    }
+
+    // ==========================================================================
+    // Image Accordion (Recognition)
+    // ==========================================================================
+
+    const accordionItems = document.querySelectorAll('.accordion__item');
+
+    accordionItems.forEach(function(item) {
+        item.addEventListener('mouseenter', function() {
+            accordionItems.forEach(function(el) { el.classList.remove('is-active'); });
+            item.classList.add('is-active');
+        });
+
+        item.addEventListener('click', function() {
+            accordionItems.forEach(function(el) { el.classList.remove('is-active'); });
+            item.classList.add('is-active');
+        });
+    });
 
     // ==========================================================================
     // Header Scroll Effect
@@ -123,14 +195,77 @@
         }
 
         lastScrollY = scrollY;
+    }
+
+    // ==========================================================================
+    // Scroll Spy — Active Nav Highlighting
+    // ==========================================================================
+
+    const navLinks = document.querySelectorAll('.nav__link');
+    const sections = [];
+
+    navLinks.forEach(function(link) {
+        var href = link.getAttribute('href');
+        if (href && href.startsWith('#')) {
+            var section = document.querySelector(href);
+            if (section) sections.push({ el: section, link: link });
+        }
+    });
+
+    function updateActiveNav() {
+        var scrollPos = window.scrollY + 200;
+
+        var current = null;
+        for (var i = sections.length - 1; i >= 0; i--) {
+            if (sections[i].el.offsetTop <= scrollPos) {
+                current = sections[i];
+                break;
+            }
+        }
+
+        navLinks.forEach(function(l) { l.classList.remove('is-active'); });
+        if (current) current.link.classList.add('is-active');
+    }
+
+    // ==========================================================================
+    // Back to Top Button
+    // ==========================================================================
+
+    const backToTop = document.querySelector('.back-to-top');
+
+    function updateBackToTop() {
+        if (!backToTop) return;
+        if (window.scrollY > 600) {
+            backToTop.classList.add('is-visible');
+        } else {
+            backToTop.classList.remove('is-visible');
+        }
+    }
+
+    if (backToTop) {
+        backToTop.addEventListener('click', function() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    }
+
+    // ==========================================================================
+    // Combined Scroll Handler
+    // ==========================================================================
+
+    function onScroll() {
+        updateHeader();
+        updateActiveNav();
+        updateBackToTop();
         ticking = false;
     }
 
     window.addEventListener('scroll', function() {
         if (!ticking) {
-            requestAnimationFrame(updateHeader);
+            requestAnimationFrame(onScroll);
             ticking = true;
         }
     }, { passive: true });
+
+    updateActiveNav();
 
 })();

@@ -1,679 +1,725 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jaedon Chin - Cybersecurity, Automation, and Systems Engineering Portfolio">
-    <meta name="author" content="Jaedon Chin">
-
-    <title>Jaedon Chin | Cybersecurity & Systems Engineer</title>
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="Jaedon Chin | Cybersecurity & Systems Engineer">
-    <meta property="og:description" content="Building secure, automated infrastructure. Full-stack systems, containerized deployments, production operations.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jaedonchin.dev">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Jaedon Chin | Cybersecurity & Systems Engineer">
-    <meta name="twitter:description" content="Building secure, automated infrastructure. Full-stack systems, containerized deployments, production operations.">
-
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-
-    <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jaedon Chin - Cybersecurity, Automation, and Systems Engineering Portfolio">
+  <meta name="author" content="Jaedon Chin">
+  <title>Jaedon Chin | Cybersecurity & Systems Engineer</title>
+  <!-- Open Graph -->
+  <meta property="og:title" content="Jaedon Chin | Cybersecurity & Systems Engineer">
+  <meta property="og:description" content="Building secure, automated infrastructure. Full-stack systems, containerized deployments, production operations.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jaedonchin.dev">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jaedon Chin | Cybersecurity & Systems Engineer">
+  <meta name="twitter:description" content="Building secure, automated infrastructure. Full-stack systems, containerized deployments, production operations.">
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <!-- OG Image -->
+  <meta property="og:image" content="https://jaedonchin.dev/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:image" content="https://jaedonchin.dev/assets/og-image.png">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="site-header">
-        <nav class="nav" aria-label="Main navigation">
-            <a href="#" class="nav__logo">JC</a>
-            <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
-                <span class="nav__toggle-bar"></span>
-                <span class="nav__toggle-bar"></span>
-                <span class="nav__toggle-bar"></span>
-            </button>
-            <ul class="nav__list">
-                <li><a href="#about" class="nav__link">About</a></li>
-                <li><a href="#projects" class="nav__link">Projects</a></li>
-                <li><a href="#skills" class="nav__link">Skills</a></li>
-                <li><a href="#experience" class="nav__link">Experience</a></li>
-                <li><a href="#contact" class="nav__link">Contact</a></li>
-                <li class="nav__cta-wrapper"><a href="assets/resume.pdf" class="btn btn--nav" target="_blank" rel="noopener noreferrer">Resume</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero">
-            <div class="hero__bg">
-                <div class="hero__grid"></div>
-            </div>
-            <div class="container hero__container">
-                <div class="hero__content animate-on-scroll">
-                    <div class="hero__badge">
-                        <span class="hero__badge-dot"></span>
-                        <span class="hero__badge-text">Security+ Certified</span>
-                    </div>
-                    <h1 class="hero__title">Jaedon <span class="hero__title-accent">Chin</span></h1>
-                    <p class="hero__subtitle">Cybersecurity | Infrastructure | Systems</p>
-                    <p class="hero__tagline">I build things that work, secure them so they stay working, and automate the rest.</p>
-                    <div class="hero__meta">
-                        <span class="hero__meta-item">
-                            <svg class="hero__meta-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
-                                <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
-                            </svg>
-                            Houston, TX
-                        </span>
-                        <span class="hero__meta-item">
-                            <svg class="hero__meta-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
-                                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/>
-                            </svg>
-                            MIS @ Texas Southern
-                        </span>
-                        <span class="hero__meta-item">
-                            <svg class="hero__meta-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
-                                <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
-                            </svg>
-                            May 2026
-                        </span>
-                    </div>
-                    <div class="hero__cta">
-                        <a href="#projects" class="btn btn--primary">See What I've Built</a>
-                        <a href="#contact" class="btn btn--secondary">Let's Talk</a>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Navigation -->
+<header class="site-header">
+  <nav class="nav" aria-label="Main navigation">
+    <a href="#" class="nav__logo">JC</a>
+    <button class="nav__toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+      <span class="nav__toggle-bar"></span>
+    </button>
+    <ul class="nav__list">
+      <li><a href="#about" class="nav__link">About</a></li>
+      <li><a href="#achievements" class="nav__link">Recognition</a></li>
+      <li><a href="#projects" class="nav__link">Projects</a></li>
+      <li><a href="#skills" class="nav__link">Skills</a></li>
+      <li><a href="#experience" class="nav__link">Experience</a></li>
+      <li><a href="#contact" class="nav__link">Contact</a></li>
+      <li class="nav__cta-wrapper"><a href="assets/resume.pdf" class="btn btn--nav" target="_blank" rel="noopener noreferrer">Resume</a></li>
+    </ul>
+  </nav>
+</header>
 
-        <!-- About Section -->
-        <section id="about" class="about section">
-            <div class="container">
-                <h2 class="section__title">About</h2>
-                <div class="about__content animate-on-scroll">
-                    <p>I've been taking things apart since I was a kid—computers, networks, anything I could get my hands on. That habit never went away. Now I just get paid to put them back together (and make sure nobody else can break in).</p>
-                    <p>My thing is making systems actually work. Not just "it runs on my machine" work, but production-grade, someone-is-depending-on-this work. I've built CRMs, deployed infrastructure, configured enterprise networks, and automated the boring stuff so I can focus on the interesting problems.</p>
-                    <p>Currently finishing my MIS degree at Texas Southern with Security+ in hand and CySA+ on deck. But honestly, most of what I know came from breaking things in my homelab at 2am and figuring out how to fix them before morning.</p>
-                </div>
-                <div class="about__callout animate-on-scroll">
-                    <h3 class="about__callout-title">How I Use AI</h3>
-                    <p>I treat AI as a force multiplier, not a crutch. I build multi-agent systems with clear separation between planning and execution — a controller decides strategy, specialized workers carry it out. I use AI to accelerate engineering work while keeping security judgment where it belongs: with the engineer. The goal is better output, faster — not less thinking.</p>
-                </div>
-            </div>
-        </section>
+<main>
 
-        <!-- Achievements Section -->
-        <section id="achievements" class="achievements section">
-            <div class="container">
-                <h2 class="section__title">Recognition</h2>
-                <div class="achievements__grid">
-                    <article class="achievement achievement--featured animate-on-scroll" data-achievement="btb">
-                        <div class="achievement__image-wrapper">
-                            <div class="achievement__placeholder achievement__placeholder--btb"></div>
-                        </div>
-                        <div class="achievement__content">
-                            <span class="achievement__label">Competition</span>
-                            <h3 class="achievement__title">1st Place — Beyond the Ball</h3>
-                            <p class="achievement__subtitle">NBA Tech Challenge</p>
-                        </div>
-                    </article>
-                    <article class="achievement animate-on-scroll" data-achievement="speaking">
-                        <div class="achievement__image-wrapper">
-                            <div class="achievement__placeholder achievement__placeholder--speaking"></div>
-                        </div>
-                        <div class="achievement__content">
-                            <span class="achievement__label">Speaking</span>
-                            <h3 class="achievement__title">Conference Presenter</h3>
-                            <p class="achievement__subtitle">Technical presentation and demonstration</p>
-                        </div>
-                    </article>
-                    <article class="achievement animate-on-scroll" data-achievement="title3">
-                        <div class="achievement__image-wrapper">
-                            <div class="achievement__placeholder achievement__placeholder--title3"></div>
-                        </div>
-                        <div class="achievement__content">
-                            <span class="achievement__label">Program</span>
-                            <h3 class="achievement__title">Title III Recognition</h3>
-                            <p class="achievement__subtitle">Federal STEM program achievement</p>
-                        </div>
-                    </article>
-                    <article class="achievement animate-on-scroll" data-achievement="academic">
-                        <div class="achievement__image-wrapper">
-                            <div class="achievement__placeholder achievement__placeholder--academic"></div>
-                        </div>
-                        <div class="achievement__content">
-                            <span class="achievement__label">Academic</span>
-                            <h3 class="achievement__title">President's & Dean's List</h3>
-                            <p class="achievement__subtitle">2x President's List · 3x Dean's List</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Community & Mentorship Section -->
-        <section id="community" class="community section">
-            <div class="container">
-                <h2 class="section__title">Community & Mentorship</h2>
-                <div class="community__grid animate-on-scroll">
-                    <div class="community__item">
-                        <h3 class="community__item-title">Prompt Engineering Curriculum</h3>
-                        <p class="community__item-desc">Created and delivered a structured prompt engineering lesson for students participating in the NBA Tech Challenge — bridging the gap between AI capability and practical application.</p>
-                    </div>
-                    <div class="community__item">
-                        <h3 class="community__item-title">Peer Mentorship</h3>
-                        <p class="community__item-desc">Mentoring non-technical peers on AI tools, app development fundamentals, and how to approach technical problems — making technology accessible beyond CS majors.</p>
-                    </div>
-                    <div class="community__item">
-                        <h3 class="community__item-title">Cyber Program Development</h3>
-                        <p class="community__item-desc">Contributing to cybersecurity program development research at TSU — helping shape curriculum and lab infrastructure for the university's growing cyber initiative.</p>
-                    </div>
-                    <div class="community__item">
-                        <h3 class="community__item-title">Industry Engagement</h3>
-                        <p class="community__item-desc">Active engagement with defense and cybersecurity organizations including MITRE, Lockheed Martin, HII, and Leidos — building connections across the GovTech and defense ecosystem.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="projects section">
-            <div class="container">
-                <h2 class="section__title">Projects</h2>
-                <p class="section__subtitle">Stuff I've actually built and shipped. Not tutorials, not toy projects—real systems solving real problems.</p>
-
-                <div class="projects__list">
-
-                    <!-- Project 1: TSU Cyber Lab -->
-                    <article class="project project--featured animate-on-scroll">
-                        <header class="project__header">
-                            <div class="project__title-row">
-                                <h3 class="project__title">TSU Cybersecurity Teaching Lab</h3>
-                                <span class="tag tag--status-complete">Active</span>
-                            </div>
-                            <div class="project__stack">
-                                <span class="tag">Cisco Catalyst 9200</span>
-                                <span class="tag">Catalyst 8200</span>
-                                <span class="tag">Meraki MS130</span>
-                                <span class="tag">Firepower 1000</span>
-                                <span class="tag">UCS C220</span>
-                            </div>
-                        </header>
-
-                        <div class="project__content">
-                            <div class="project__section">
-                                <h4 class="project__section-title">Problem</h4>
-                                <p>Texas Southern University had no dedicated cybersecurity lab. Students lacked access to enterprise networking equipment for hands-on learning — limiting practical skill development in a field that demands it.</p>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">Architecture</h4>
-                                <p>Multi-layer campus network with Cisco Catalyst 9200/8200 core switching, Meraki MS130 access layer, and Firepower 1000 series for threat inspection. UCS C220 rack servers provide compute for lab workloads. Full VLAN segmentation isolates student traffic from production.</p>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">What I Built</h4>
-                                <ul class="project__list">
-                                    <li>Physical and logical network infrastructure from bare metal to operational</li>
-                                    <li>VLAN segmentation architecture separating lab, management, and campus traffic</li>
-                                    <li>Network diagrams and topology documentation for the full environment</li>
-                                    <li>Configuration documentation and handoff guide for program continuity</li>
-                                    <li>Rack installation, cabling, and hardware commissioning</li>
-                                </ul>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">Security</h4>
-                                <p>Firepower IPS/IDS providing real-time threat inspection. VLAN-based network segmentation enforcing least-privilege access between zones. Dedicated management VLAN for infrastructure administration. Built to support future expansion of the cyber program.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 2: R-Value CRM -->
-                    <article class="project project--featured animate-on-scroll">
-                        <header class="project__header">
-                            <div class="project__title-row">
-                                <h3 class="project__title">R-Value CRM</h3>
-                                <span class="tag tag--status">In Progress</span>
-                            </div>
-                            <div class="project__stack">
-                                <span class="tag">Next.js</span>
-                                <span class="tag">TypeScript</span>
-                                <span class="tag">Supabase</span>
-                                <span class="tag">PostgreSQL</span>
-                                <span class="tag">Tailwind</span>
-                            </div>
-                        </header>
-
-                        <div class="project__content">
-                            <div class="project__section">
-                                <h4 class="project__section-title">Problem</h4>
-                                <p>Insulation contractors were running their businesses out of text threads, spreadsheets, and sticky notes. They had no idea if a job was profitable until it was done—and sometimes not even then. Generic CRMs didn't fit their workflow, and the industry-specific ones cost a fortune.</p>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">Architecture</h4>
-                                <p>Next.js App Router frontend talking to Supabase (Postgres + Auth). Row Level Security handles multi-tenancy so each contractor only sees their own data. Strict client/server split—no "use client" where it doesn't belong. Playwright catches regressions before they hit production.</p>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">What I Built</h4>
-                                <ul class="project__list">
-                                    <li>Drag-and-drop kanban for tracking leads through the pipeline</li>
-                                    <li>One-click lead → job conversion that keeps everything linked</li>
-                                    <li>Time tracking that workers can use without logging in (they just need the job link)</li>
-                                    <li>Real-time cost tracking that calculates labor automatically from time entries</li>
-                                    <li>Profit dashboard showing estimated vs. actual—no more guessing</li>
-                                    <li>Activity feed that logs everything so you know who did what and when</li>
-                                </ul>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">Current State</h4>
-                                <p>Core features are done and tested. Schema is locked down with migrations. Now polishing the UI and building out the marketing site. Already have contractors using it.</p>
-                            </div>
-                        </div>
-
-                        <footer class="project__footer">
-                            <a href="https://www.rvalueops.com/marketing" class="project__link" target="_blank" rel="noopener noreferrer">View Website</a>
-                        </footer>
-                    </article>
-
-                    <!-- Project 3: Pandora -->
-                    <article class="project project--featured animate-on-scroll">
-                        <header class="project__header">
-                            <div class="project__title-row">
-                                <h3 class="project__title">Pandora — Local-First AI Voice Assistant</h3>
-                                <span class="tag tag--status">In Progress</span>
-                            </div>
-                            <div class="project__stack">
-                                <span class="tag">Python</span>
-                                <span class="tag">faster-whisper</span>
-                                <span class="tag">Ollama</span>
-                                <span class="tag">Kokoro TTS</span>
-                                <span class="tag">Docker</span>
-                                <span class="tag">WireGuard</span>
-                                <span class="tag">Next.js</span>
-                            </div>
-                        </header>
-
-                        <div class="project__content">
-                            <div class="project__section">
-                                <h4 class="project__section-title">Problem</h4>
-                                <p>Cloud voice assistants are a privacy nightmare, add noticeable latency, and get expensive fast. I wanted something that processes voice locally with sub-second responses, but can still tap into cloud APIs when the local model isn't enough—all without giving an AI unrestricted access to my infrastructure.</p>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">Architecture</h4>
-                                <p>Two-machine setup. My RTX 3070 handles the real-time voice pipeline (wake word → speech-to-text → LLM → text-to-speech) within 8GB VRAM constraints. VPS runs the persistent stuff—Postgres, n8n for automation, Qdrant for semantic search—connected over an encrypted WireGuard tunnel. About 60% of queries stay local; the rest get routed to cloud APIs intelligently. Agent Zero on the VPS handles long-running autonomous tasks.</p>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">What I Built</h4>
-                                <ul class="project__list">
-                                    <li>Custom voice pipeline: faster-whisper (INT8) → Qwen3 via Ollama → Kokoro TTS, ~3s end-to-end</li>
-                                    <li>Trained my own wake word model using synthetic speech data via openWakeWord</li>
-                                    <li>Hybrid query router that decides local LLM vs. semantic cache vs. cloud API based on complexity</li>
-                                    <li>Defense-in-depth security: API wrapper with explicit container allowlists, rate limiting, immutable audit logs</li>
-                                    <li>WireGuard tunnel with all services bound to tunnel IP—nothing exposed on public interfaces</li>
-                                    <li>Hardened Docker containers: non-root, dropped capabilities, read-only filesystems, resource limits</li>
-                                </ul>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">Security</h4>
-                                <p>The AI never touches the Docker socket directly. Every container operation goes through an allowlist with rate limiting, and audit logs are stored separately where the AI can't modify them. Network is segmented by trust level—WireGuard for internal traffic, Cloudflare Tunnel with Zero Trust for anything external. I've documented the threat model with specific mitigations for prompt injection, container escape, and secret leakage.</p>
-                            </div>
-                        </div>
-
-                        <footer class="project__footer">
-                            <span class="project__link project__link--coming-soon">GitHub coming soon</span>
-                        </footer>
-                    </article>
-
-                    <!-- Project 4: NBA Tech Challenge -->
-                    <article class="project animate-on-scroll">
-                        <header class="project__header">
-                            <div class="project__title-row">
-                                <h3 class="project__title">Rockets Loyalty+ — NBA Beyond the Ball</h3>
-                                <span class="tag tag--status-complete">1st Place</span>
-                            </div>
-                            <div class="project__stack">
-                                <span class="tag">Next.js</span>
-                                <span class="tag">Supabase</span>
-                                <span class="tag">Tailwind</span>
-                                <span class="tag">AI-Assisted Ideation</span>
-                            </div>
-                        </header>
-
-                        <div class="project__content">
-                            <div class="project__section">
-                                <h4 class="project__section-title">Problem</h4>
-                                <p>The NBA Beyond the Ball Tech Challenge asked teams to build a fan engagement solution for the Houston Rockets. Needed to ship a working product under competition time pressure while leading a team with mixed technical backgrounds.</p>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">Architecture</h4>
-                                <p>Next.js frontend with Supabase backend for auth and data persistence. Tailwind for rapid UI development. AI-assisted ideation during the design phase to accelerate user research and feature scoping.</p>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">What I Built</h4>
-                                <ul class="project__list">
-                                    <li>Led development as Lead Developer — 20+ hours of hands-on coding</li>
-                                    <li>Built user personas and empathy maps to ground feature decisions in real fan needs</li>
-                                    <li>Designed and led a prompt engineering lesson for participating students</li>
-                                    <li>Full-stack fan loyalty application with gamification and reward mechanics</li>
-                                    <li>Managed team delivery, technical direction, and final presentation</li>
-                                </ul>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">Result</h4>
-                                <p>Won 1st place in the NBA Beyond the Ball Tech Challenge. Demonstrated ability to ship under pressure, lead cross-functional teams, and combine technical execution with user-centered design thinking.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                    <!-- Project 5: VPS Infrastructure -->
-                    <article class="project animate-on-scroll">
-                        <header class="project__header">
-                            <h3 class="project__title">Production VPS Infrastructure</h3>
-                            <div class="project__stack">
-                                <span class="tag">Docker</span>
-                                <span class="tag">Traefik</span>
-                                <span class="tag">Cloudflare</span>
-                                <span class="tag">Ubuntu</span>
-                            </div>
-                        </header>
-
-                        <div class="project__content">
-                            <div class="project__section">
-                                <h4 class="project__section-title">Problem</h4>
-                                <p>I needed somewhere to run my projects that wasn't going to cost me $50/month per app. Vercel and Railway are great until you're running five things. Manual server setup works until you forget how you configured it six months ago.</p>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">Architecture</h4>
-                                <p>One VPS, everything containerized. Traefik sits in front and routes traffic to the right container based on domain. Cloudflare handles the public-facing stuff—DNS, SSL termination, DDoS protection. The whole thing is defined in Compose files so I can blow it away and rebuild it in minutes.</p>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">What I Built</h4>
-                                <ul class="project__list">
-                                    <li>Traefik reverse proxy with automatic Let's Encrypt certs—no manual renewal</li>
-                                    <li>Cloudflare Tunnels so nothing is exposed directly to the internet</li>
-                                    <li>Network isolation between containers—one compromised service can't reach the others</li>
-                                    <li>Automated backups that actually get tested (learned that lesson the hard way)</li>
-                                </ul>
-                            </div>
-
-                            <div class="project__section">
-                                <h4 class="project__section-title">Security</h4>
-                                <p>Fail2ban watching SSH. UFW set to deny by default. Containers run as non-root with dropped capabilities. Secrets live in env files that never touch git. It's not paranoia if they're actually scanning your ports.</p>
-                            </div>
-                        </div>
-                    </article>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="skills section">
-            <div class="container">
-                <h2 class="section__title">Skills & Certifications</h2>
-
-                <!-- Certifications first for credibility -->
-                <div class="certifications animate-on-scroll">
-                    <h3 class="skills__section-title">Certifications</h3>
-                    <ul class="certifications__list">
-                        <li class="certification">
-                            <div class="certification__icon">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                                </svg>
-                            </div>
-                            <div class="certification__info">
-                                <span class="certification__name">CompTIA Security+</span>
-                                <span class="certification__detail">SY0-701</span>
-                            </div>
-                            <span class="certification__status">Active</span>
-                        </li>
-                        <li class="certification">
-                            <div class="certification__icon certification__icon--pending">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                                </svg>
-                            </div>
-                            <div class="certification__info">
-                                <span class="certification__name">CompTIA CySA+</span>
-                                <span class="certification__detail">CS0-003</span>
-                            </div>
-                            <span class="certification__status certification__status--pending">In Progress</span>
-                        </li>
-                        <li class="certification">
-                            <div class="certification__icon certification__icon--planned">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                                </svg>
-                            </div>
-                            <div class="certification__info">
-                                <span class="certification__name">AWS Cloud Practitioner</span>
-                                <span class="certification__detail">CLF-C02</span>
-                            </div>
-                            <span class="certification__status certification__status--planned">Planned</span>
-                        </li>
-                        <li class="certification">
-                            <div class="certification__icon certification__icon--planned">
-                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-                                </svg>
-                            </div>
-                            <div class="certification__info">
-                                <span class="certification__name">AWS AI Practitioner</span>
-                                <span class="certification__detail">AIF-C01</span>
-                            </div>
-                            <span class="certification__status certification__status--planned">Planned</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Skills grid -->
-                <div class="skills__grid animate-on-scroll">
-                    <div class="skill-group">
-                        <h3 class="skill-group__title">Infrastructure</h3>
-                        <ul class="skill-group__list">
-                            <li>Docker / Compose</li>
-                            <li>Linux (Ubuntu/Debian)</li>
-                            <li>Traefik / Cloudflare</li>
-                            <li>TCP/IP, DNS, DHCP</li>
-                        </ul>
-                    </div>
-                    <div class="skill-group">
-                        <h3 class="skill-group__title">Networking</h3>
-                        <ul class="skill-group__list">
-                            <li>Cisco Catalyst / Meraki</li>
-                            <li>Cisco Firepower</li>
-                            <li>Network Segmentation</li>
-                            <li>Wireshark</li>
-                        </ul>
-                    </div>
-                    <div class="skill-group">
-                        <h3 class="skill-group__title">Security</h3>
-                        <ul class="skill-group__list">
-                            <li>Network Security</li>
-                            <li>Risk Assessment</li>
-                            <li>Incident Response</li>
-                            <li>Firewall / RLS</li>
-                        </ul>
-                    </div>
-                    <div class="skill-group">
-                        <h3 class="skill-group__title">Development</h3>
-                        <ul class="skill-group__list">
-                            <li>TypeScript / Next.js</li>
-                            <li>Python</li>
-                            <li>PostgreSQL / Supabase</li>
-                            <li>Git / Playwright</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- What I'm Learning Now -->
-                <div class="learning animate-on-scroll">
-                    <h3 class="skills__section-title">What I'm Learning Now</h3>
-                    <div class="learning__items">
-                        <span class="learning__tag">CompTIA CySA+</span>
-                        <span class="learning__tag">AWS Cloud Architecture</span>
-                        <span class="learning__tag">Docker Security</span>
-                        <span class="learning__tag">Container Hardening</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="experience section">
-            <div class="container">
-                <h2 class="section__title">Experience</h2>
-                <div class="experience__timeline">
-                    <article class="experience-item animate-on-scroll">
-                        <div class="experience-item__dot"></div>
-                        <div class="experience-item__content">
-                            <h3 class="experience-item__title">Cybersecurity Infrastructure Support Technician</h3>
-                            <p class="experience-item__org">Texas Southern University</p>
-                            <p class="experience-item__period">Apr 2025 - Present</p>
-                            <p class="experience-item__description">I'm the lead student tech for TSU's first dedicated cybersecurity lab. Basically, I'm the one racking Cisco gear, configuring VLANs, and making sure the Firepower doesn't block legitimate traffic. When something breaks at 4pm on a Friday, I'm the one who stays to fix it.</p>
-                        </div>
-                    </article>
-                    <article class="experience-item animate-on-scroll">
-                        <div class="experience-item__dot"></div>
-                        <div class="experience-item__content">
-                            <h3 class="experience-item__title">IT Technician – UPS Systems Installation</h3>
-                            <p class="experience-item__org">JosephOne Technologies / CCISD</p>
-                            <p class="experience-item__period">Aug 2025 - Present</p>
-                            <p class="experience-item__description">Deployed 600+ enterprise UPS units across an entire school district. That's a lot of battery backups, a lot of cable management, and a lot of classrooms that don't lose their work when the power flickers anymore. Set up centralized monitoring so IT can see battery health across every campus from one dashboard.</p>
-                        </div>
-                    </article>
-                    <article class="experience-item animate-on-scroll">
-                        <div class="experience-item__dot"></div>
-                        <div class="experience-item__content">
-                            <h3 class="experience-item__title">World Bank Project Intern</h3>
-                            <p class="experience-item__org">National Electrification Project</p>
-                            <p class="experience-item__period">Jun 2022 - Aug 2022</p>
-                            <p class="experience-item__description">Worked on IT infrastructure planning for solar electrification projects in Liberia—the kind of work where your database decisions affect whether 5,000+ households get reliable power. Collaborated with engineers from three continents and learned that "international deadline" means something different to everyone.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Blog Section -->
-        <section id="blog" class="blog section">
-            <div class="container">
-                <h2 class="section__title">Writing</h2>
-                <div class="blog__grid">
-                    <article class="blog-card blog-card--ready animate-on-scroll">
-                        <span class="blog-card__label">Infrastructure</span>
-                        <h3 class="blog-card__title">How I Helped Build TSU's Cyber Lab from Scratch</h3>
-                        <p class="blog-card__excerpt">From bare rack to operational teaching lab — the process, decisions, and lessons from building a university cybersecurity environment on enterprise Cisco gear.</p>
-                        <span class="blog-card__meta">Coming Soon</span>
-                    </article>
-                    <article class="blog-card animate-on-scroll">
-                        <span class="blog-card__label">AI + Security</span>
-                        <h3 class="blog-card__title">AI as a Security Tool, Not a Shortcut</h3>
-                        <p class="blog-card__excerpt">Why treating AI as a force multiplier — not a replacement for judgment — produces better security outcomes.</p>
-                        <span class="blog-card__meta">Coming Soon</span>
-                    </article>
-                    <article class="blog-card animate-on-scroll">
-                        <span class="blog-card__label">Field Work</span>
-                        <h3 class="blog-card__title">What I Learned Installing 600 UPS Systems</h3>
-                        <p class="blog-card__excerpt">Lessons from large-scale hardware deployment across a school district — logistics, troubleshooting, and working at scale.</p>
-                        <span class="blog-card__meta">Coming Soon</span>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Career Focus Section -->
-        <section id="career-focus" class="career-focus section">
-            <div class="container">
-                <h2 class="section__title">Career Focus</h2>
-                <div class="career-focus__content animate-on-scroll">
-                    <p>I'm targeting roles in cybersecurity infrastructure, cloud security, and GovTech/defense-adjacent environments. My experience is hands-on — building secure networks with enterprise Cisco gear, shipping production applications with real access controls, and developing AI-powered security tooling that augments human judgment. I want to bring that same build-and-secure mindset to teams protecting critical systems.</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="contact section">
-            <div class="container">
-                <h2 class="section__title">Get in Touch</h2>
-                <p class="contact__intro">Got a project, a question, or just want to talk shop? I'm always down to connect. Open to internships, co-ops, and full-time opportunities.</p>
-                <div class="contact__cards animate-on-scroll">
-                    <a href="mailto:jaechin9@gmail.com" class="contact__card">
-                        <div class="contact__card-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                        </div>
-                        <div class="contact__card-content">
-                            <span class="contact__card-label">Email</span>
-                            <span class="contact__card-value">jaechin9@gmail.com</span>
-                        </div>
-                        <svg class="contact__card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-                            <line x1="7" y1="17" x2="17" y2="7"/>
-                            <polyline points="7 7 17 7 17 17"/>
-                        </svg>
-                    </a>
-                    <a href="https://github.com/JaeChin" class="contact__card" target="_blank" rel="noopener noreferrer">
-                        <div class="contact__card-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </div>
-                        <div class="contact__card-content">
-                            <span class="contact__card-label">GitHub</span>
-                            <span class="contact__card-value">@JaeChin</span>
-                        </div>
-                        <svg class="contact__card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-                            <line x1="7" y1="17" x2="17" y2="7"/>
-                            <polyline points="7 7 17 7 17 17"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.linkedin.com/in/jaedonchin/" class="contact__card" target="_blank" rel="noopener noreferrer">
-                        <div class="contact__card-icon">
-                            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
-                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
-                            </svg>
-                        </div>
-                        <div class="contact__card-content">
-                            <span class="contact__card-label">LinkedIn</span>
-                            <span class="contact__card-value">Jaedon Chin</span>
-                        </div>
-                        <svg class="contact__card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
-                            <line x1="7" y1="17" x2="17" y2="7"/>
-                            <polyline points="7 7 17 7 17 17"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="site-footer">
-        <div class="container">
-            <p>&copy; 2026 Jaedon Chin. All rights reserved.</p>
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero__bg">
+      <div class="hero__grid"></div>
+    </div>
+    <div class="container hero__container">
+      <div class="hero__content animate-on-scroll">
+        <div class="hero__badge">
+          <span class="hero__badge-dot"></span>
+          <span class="hero__badge-text">Security+ Certified &nbsp;·&nbsp; Open to Work</span>
         </div>
-    </footer>
+        <h1 class="hero__title hero__title--shiny">Jaedon <span class="hero__title-accent">Chin</span></h1>
+        <p class="hero__subtitle">Cybersecurity | Infrastructure | Systems</p>
+        <p class="hero__tagline">Cybersecurity engineer building secure infrastructure at the intersection of networking, cloud, and AI.</p>
+        <div class="hero__meta">
+          <span class="hero__meta-item">
+            <svg class="hero__meta-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+            </svg>
+            Houston, TX
+          </span>
+          <span class="hero__meta-item">
+            <svg class="hero__meta-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+              <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0z"/>
+            </svg>
+            MIS @ Texas Southern
+          </span>
+          <span class="hero__meta-item">
+            <svg class="hero__meta-icon" viewBox="0 0 20 20" fill="currentColor" width="16" height="16">
+              <path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"/>
+            </svg>
+            May 2026
+          </span>
+        </div>
+        <div class="hero__cta">
+          <a href="#projects" class="btn btn--primary">See What I've Built</a>
+          <a href="#contact" class="btn btn--secondary">Let's Talk</a>
+        </div>
+      </div>
+      <div class="hero__terminal animate-on-scroll" aria-hidden="true">
+        <div class="hero__terminal-header">
+          <span class="hero__terminal-dot"></span>
+          <span class="hero__terminal-dot"></span>
+          <span class="hero__terminal-dot"></span>
+          <span class="hero__terminal-title">terminal</span>
+        </div>
+        <div class="hero__terminal-body">
+          <div class="hero__terminal-line"><span class="hero__terminal-prompt">$</span> <span class="hero__terminal-cmd">whoami</span></div>
+          <div class="hero__terminal-output">jaedon.chin</div>
+          <div class="hero__terminal-line"><span class="hero__terminal-prompt">$</span> <span class="hero__terminal-cmd">cat /etc/security/focus.conf</span></div>
+          <div class="hero__terminal-output">DOMAIN=cybersecurity<br>INFRA=cloud+enterprise<br>CERT=security+<br>STATUS=open_to_work</div>
+          <div class="hero__terminal-line"><span class="hero__terminal-prompt">$</span> <span class="hero__terminal-cmd">echo $GRADUATION</span></div>
+          <div class="hero__terminal-output">May 2026</div>
+          <div class="hero__terminal-line"><span class="hero__terminal-prompt">$</span> <span class="hero__terminal-cursor"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script src="js/main.js"></script>
+  <!-- Social Proof Strip -->
+  <div class="proof-strip">
+    <div class="proof-strip__inner">
+      <span class="proof-strip__item">
+        <strong>1st Place</strong> NBA Beyond the Ball
+      </span>
+      <span class="proof-strip__divider"></span>
+      <span class="proof-strip__item">
+        <strong>Security+</strong> Certified
+      </span>
+      <span class="proof-strip__divider"></span>
+      <span class="proof-strip__item">
+        <strong>600+</strong> Enterprise Deployments
+      </span>
+      <span class="proof-strip__divider"></span>
+      <span class="proof-strip__item">
+        <strong>5,000+</strong> Households Impacted
+      </span>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <section id="about" class="about section">
+    <div class="container">
+      <h2 class="section__title">About</h2>
+      <div class="about__card animate-on-scroll">
+        <div class="about__headshot-wrapper">
+          <div class="about__headshot-ring"></div>
+          <img
+            src="assets/images/Headshot.jpg"
+            alt="Jaedon Chin"
+            class="about__headshot"
+          />
+        </div>
+        <div class="about__text">
+          <p class="about__lead">I've been taking things apart since I was a kid: computers, networks, anything I could get my hands on. That habit never went away. Now I get paid to put them back together and make sure nobody else can break in.</p>
+          <p>My focus is making systems that actually work in production. I've built CRMs, deployed infrastructure, configured enterprise networks, and automated the repetitive stuff so I can spend time on problems that actually matter.</p>
+          <p>Targeting cybersecurity infrastructure, cloud security, and GovTech roles. Hands-on experience with enterprise Cisco, production access controls, containerized deployments, and AI-powered security tooling. Security+ certified, graduating May 2026.</p>
+        </div>
+        <div class="about__stats">
+          <div class="about__stat">
+            <span class="about__stat-value">TSU Grad</span>
+            <span class="about__stat-label">BBA in Management Information Systems</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-value">Sec+</span>
+            <span class="about__stat-label">Certified</span>
+          </div>
+          <div class="about__stat">
+            <span class="about__stat-value">1st</span>
+            <span class="about__stat-label">NBA Tech Challenge</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recognition Section — Image Accordion -->
+  <section id="achievements" class="achievements section">
+    <div class="container">
+      <h2 class="section__title">Recognition</h2>
+      <div class="accordion animate-on-scroll">
+        <div class="accordion__item is-active" data-index="0">
+          <img src="assets/images/achievement-nba.jpg" alt="NBA Beyond the Ball Tech Challenge - 1st Place" class="accordion__image" style="object-position: center 45%;" />
+          <div class="accordion__overlay"></div>
+          <span class="accordion__caption">1st Place: Beyond the Ball</span>
+        </div>
+        <div class="accordion__item" data-index="1">
+          <img src="assets/images/achievement-speaking.jpg" alt="Title III Conference Presenter" class="accordion__image" style="object-position: center 70%;" />
+          <div class="accordion__overlay"></div>
+          <span class="accordion__caption">Title III Conference Presenter</span>
+        </div>
+        <div class="accordion__item" data-index="2">
+          <img src="assets/images/achievement-cyberlab.jpg" alt="TSU Cybersecurity Student Lead" class="accordion__image" />
+          <div class="accordion__overlay"></div>
+          <span class="accordion__caption">TSU Cybersecurity Student Lead</span>
+        </div>
+        <div class="accordion__item" data-index="3">
+          <img src="assets/images/achievement-destined.jpg" alt="Destined for Success Worldwide" class="accordion__image" style="object-position: center 25%;" />
+          <div class="accordion__overlay"></div>
+          <span class="accordion__caption">Certified Professional Development</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community & Mentorship Section -->
+  <section id="community" class="community section">
+    <div class="container">
+      <h2 class="section__title">Community &amp; Mentorship</h2>
+      <div class="community__grid animate-on-scroll">
+
+        <div class="community__item">
+          <h3 class="community__item-title">Prompt Engineering Curriculum</h3>
+          <p class="community__item-desc">Created and delivered a structured prompt engineering lesson for NBA Tech Challenge students, bridging AI capability and practical application.</p>
+        </div>
+
+        <div class="community__item">
+          <h3 class="community__item-title">Peer Mentorship</h3>
+          <p class="community__item-desc">Mentoring non-technical peers on AI tools and app development fundamentals, making technology accessible beyond CS majors.</p>
+        </div>
+
+        <div class="community__item">
+          <h3 class="community__item-title">Cyber Program Development</h3>
+          <p class="community__item-desc">Contributing to cybersecurity curriculum and lab infrastructure development at TSU, supporting the university's growing cyber initiative.</p>
+        </div>
+
+        <div class="community__item">
+          <h3 class="community__item-title">Industry Engagement</h3>
+          <p class="community__item-desc">Active engagement with defense and cybersecurity organizations including MITRE, Lockheed Martin, HII, and Leidos across the GovTech ecosystem.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section — Animated Tabs -->
+  <section id="projects" class="projects section">
+    <div class="container">
+      <h2 class="section__title">Projects</h2>
+      <p class="section__subtitle">Real systems solving real problems. Not tutorials, not toy projects.</p>
+
+      <div class="tabs animate-on-scroll">
+        <!-- Tab Bar -->
+        <div class="tabs__bar">
+          <button class="tabs__btn is-active" data-tab="tsu-lab">TSU Cyber Lab</button>
+          <button class="tabs__btn" data-tab="rvalue">R-Value CRM</button>
+          <button class="tabs__btn" data-tab="pandora">Pandora AI</button>
+          <button class="tabs__btn" data-tab="nba">NBA Tech Challenge</button>
+          <button class="tabs__btn" data-tab="vps">VPS Infrastructure</button>
+          <div class="tabs__indicator"></div>
+        </div>
+
+        <!-- Tab Panels -->
+        <div class="tabs__panels">
+
+          <!-- TSU Cyber Lab -->
+          <div class="tabs__panel is-active" data-panel="tsu-lab">
+            <header class="project__header">
+              <div class="project__title-row">
+                <h3 class="project__title">TSU Cybersecurity Teaching Lab</h3>
+                <span class="tag tag--status-complete">Active</span>
+              </div>
+              <div class="project__stack">
+                <span class="tag">Cisco Catalyst 9200</span>
+                <span class="tag">Catalyst 8200</span>
+                <span class="tag">Meraki MS130</span>
+                <span class="tag">Firepower 1000</span>
+                <span class="tag">UCS C220</span>
+              </div>
+            </header>
+            <div class="project__content">
+              <div class="project__section">
+                <h4 class="project__section-title">Problem</h4>
+                <p>Texas Southern University had no dedicated cybersecurity lab. Students lacked access to enterprise networking equipment for hands-on learning, limiting practical skill development in a field that demands it.</p>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">Architecture</h4>
+                <p>Multi-layer campus network with Cisco Catalyst 9200/8200 core switching, Meraki MS130 access layer, and Firepower 1000 for threat inspection. UCS C220 rack servers provide compute for lab workloads. Full VLAN segmentation isolates student traffic from production.</p>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">What I Built</h4>
+                <ul class="project__list">
+                  <li>Physical and logical network infrastructure from bare metal to operational</li>
+                  <li>VLAN segmentation separating lab, management, and campus traffic</li>
+                  <li>Network diagrams and topology documentation for the full environment</li>
+                  <li>Configuration documentation and handoff guide for program continuity</li>
+                  <li>Rack installation, cabling, and hardware commissioning</li>
+                </ul>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">Security</h4>
+                <p>Firepower IPS/IDS providing real-time threat inspection. VLAN-based segmentation enforcing least-privilege access between zones. Dedicated management VLAN for infrastructure administration.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- R-Value CRM -->
+          <div class="tabs__panel" data-panel="rvalue">
+            <header class="project__header">
+              <div class="project__title-row">
+                <h3 class="project__title">R-Value CRM</h3>
+                <span class="tag tag--status">In Progress</span>
+              </div>
+              <div class="project__stack">
+                <span class="tag">Next.js</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">PostgreSQL</span>
+                <span class="tag">Tailwind</span>
+              </div>
+            </header>
+            <div class="project__content">
+              <div class="project__section">
+                <h4 class="project__section-title">Problem</h4>
+                <p>Insulation contractors were running their businesses out of text threads, spreadsheets, and sticky notes. No visibility into job profitability until it was done. Generic CRMs didn't fit the workflow; industry-specific ones were expensive.</p>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">Architecture</h4>
+                <p>Next.js App Router frontend connected to Supabase (Postgres + Auth). Row Level Security handles multi-tenancy so each contractor only sees their own data. Strict client/server split throughout. Playwright catches regressions before they reach production.</p>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">What I Built</h4>
+                <ul class="project__list">
+                  <li>Drag-and-drop kanban for tracking leads through the pipeline</li>
+                  <li>One-click lead-to-job conversion that keeps everything linked</li>
+                  <li>Time tracking workers can use without logging in (just the job link)</li>
+                  <li>Real-time cost tracking with automatic labor calculation from time entries</li>
+                  <li>Profit dashboard showing estimated vs. actual</li>
+                  <li>Activity feed logging all actions with timestamps</li>
+                </ul>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">Current State</h4>
+                <p>Core features complete and tested. Schema locked with migrations. Polishing UI and building the marketing site. Contractors are already using it.</p>
+              </div>
+            </div>
+            <footer class="project__footer">
+              <a href="https://www.rvalueops.com/marketing" class="project__link" target="_blank" rel="noopener noreferrer">View Website</a>
+            </footer>
+          </div>
+
+          <!-- Pandora -->
+          <div class="tabs__panel" data-panel="pandora">
+            <header class="project__header">
+              <div class="project__title-row">
+                <h3 class="project__title">Pandora: Local-First AI Voice Assistant</h3>
+                <span class="tag tag--status">In Progress</span>
+              </div>
+              <div class="project__stack">
+                <span class="tag">Python</span>
+                <span class="tag">faster-whisper</span>
+                <span class="tag">Ollama</span>
+                <span class="tag">Kokoro TTS</span>
+                <span class="tag">Docker</span>
+                <span class="tag">WireGuard</span>
+                <span class="tag">Next.js</span>
+              </div>
+            </header>
+            <div class="project__content">
+              <div class="project__section">
+                <h4 class="project__section-title">Problem</h4>
+                <p>Cloud voice assistants are a privacy liability, add noticeable latency, and get expensive fast. I wanted sub-second local voice processing that could still reach cloud APIs when needed, without giving an AI unrestricted access to my infrastructure.</p>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">Architecture</h4>
+                <p>Two-machine setup. RTX 3070 handles the real-time voice pipeline (wake word, speech-to-text, LLM, text-to-speech) within 8GB VRAM constraints. VPS runs Postgres, n8n, and Qdrant for semantic search, connected over an encrypted WireGuard tunnel. About 60% of queries stay local; the rest route to cloud APIs. Agent Zero on the VPS handles long-running autonomous tasks.</p>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">What I Built</h4>
+                <ul class="project__list">
+                  <li>Custom voice pipeline: faster-whisper (INT8) to Qwen3 via Ollama to Kokoro TTS, ~3s end-to-end</li>
+                  <li>Custom wake word model trained on synthetic speech data via openWakeWord</li>
+                  <li>Hybrid query router: decides local LLM vs. semantic cache vs. cloud API based on complexity</li>
+                  <li>Defense-in-depth: API wrapper with container allowlists, rate limiting, immutable audit logs</li>
+                  <li>WireGuard tunnel with all services bound to tunnel IP, nothing exposed on public interfaces</li>
+                  <li>Hardened Docker containers: non-root, dropped capabilities, read-only filesystems, resource limits</li>
+                </ul>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">Security</h4>
+                <p>The AI never touches the Docker socket directly. Every container operation goes through an allowlist with rate limiting. Audit logs are stored separately where the AI cannot modify them. Network is segmented by trust level: WireGuard internally, Cloudflare Zero Trust for external access. Documented threat model covers prompt injection, container escape, and secret leakage.</p>
+              </div>
+            </div>
+            <footer class="project__footer">
+              <a href="https://github.com/JaeChin" class="project__link" target="_blank" rel="noopener noreferrer">GitHub (Private Repo)</a>
+            </footer>
+          </div>
+
+          <!-- NBA Tech Challenge -->
+          <div class="tabs__panel" data-panel="nba">
+            <header class="project__header">
+              <div class="project__title-row">
+                <h3 class="project__title">Rockets Loyalty+: NBA Beyond the Ball</h3>
+                <span class="tag tag--status-complete">1st Place</span>
+              </div>
+              <div class="project__stack">
+                <span class="tag">Next.js</span>
+                <span class="tag">Supabase</span>
+                <span class="tag">Tailwind</span>
+                <span class="tag">AI-Assisted Ideation</span>
+              </div>
+            </header>
+            <div class="project__content">
+              <div class="project__section">
+                <h4 class="project__section-title">Problem</h4>
+                <p>Build a fan engagement solution for the Houston Rockets under competition time pressure while leading a team with mixed technical backgrounds.</p>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">Architecture</h4>
+                <p>Next.js frontend with Supabase backend for auth and data persistence. Tailwind for rapid UI development. AI-assisted ideation during design to accelerate user research and feature scoping.</p>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">What I Built</h4>
+                <ul class="project__list">
+                  <li>Led development as Lead Developer: 20+ hours of hands-on coding</li>
+                  <li>Built user personas and empathy maps grounded in real fan needs</li>
+                  <li>Designed and led a prompt engineering lesson for participating students</li>
+                  <li>Full-stack fan loyalty app with gamification and reward mechanics</li>
+                  <li>Managed team delivery, technical direction, and final presentation</li>
+                </ul>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">Result</h4>
+                <p>Won 1st place in the NBA Beyond the Ball Tech Challenge. Demonstrated ability to ship under pressure, lead cross-functional teams, and combine technical execution with user-centered design.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- VPS Infrastructure -->
+          <div class="tabs__panel" data-panel="vps">
+            <header class="project__header">
+              <div class="project__title-row">
+                <h3 class="project__title">Production VPS Infrastructure</h3>
+              </div>
+              <div class="project__stack">
+                <span class="tag">Docker</span>
+                <span class="tag">Traefik</span>
+                <span class="tag">Cloudflare</span>
+                <span class="tag">Ubuntu</span>
+              </div>
+            </header>
+            <div class="project__content">
+              <div class="project__section">
+                <h4 class="project__section-title">Problem</h4>
+                <p>Needed a way to run multiple projects without paying per-app platform fees and without losing track of how everything was configured six months later.</p>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">Architecture</h4>
+                <p>One VPS, everything containerized. Traefik routes traffic by domain to the right container. Cloudflare handles DNS, SSL termination, and DDoS protection. Everything is defined in Compose files so the environment can be rebuilt from scratch in minutes.</p>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">What I Built</h4>
+                <ul class="project__list">
+                  <li>Traefik reverse proxy with automatic Let's Encrypt cert renewal</li>
+                  <li>Cloudflare Tunnels: nothing exposed directly to the internet</li>
+                  <li>Network isolation between containers at the Compose level</li>
+                  <li>Automated backups with recovery testing</li>
+                </ul>
+              </div>
+              <div class="project__section">
+                <h4 class="project__section-title">Security</h4>
+                <p>Fail2ban on SSH. UFW deny-by-default. Containers run non-root with dropped capabilities. Secrets in env files that never touch git.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section">
+    <div class="container">
+      <h2 class="section__title">Skills &amp; Certifications</h2>
+
+      <div class="certifications animate-on-scroll">
+        <h3 class="skills__section-title">Certifications</h3>
+        <ul class="certifications__list">
+          <li class="certification">
+            <div class="certification__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="certification__info">
+              <span class="certification__name">CompTIA Security+</span>
+              <span class="certification__detail">SY0-701</span>
+            </div>
+            <span class="certification__status">Active</span>
+          </li>
+          <li class="certification">
+            <div class="certification__icon certification__icon--pending">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="certification__info">
+              <span class="certification__name">CompTIA CySA+</span>
+              <span class="certification__detail">CS0-003</span>
+            </div>
+            <span class="certification__status certification__status--pending">In Progress</span>
+          </li>
+          <li class="certification">
+            <div class="certification__icon certification__icon--planned">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="certification__info">
+              <span class="certification__name">AWS Cloud Practitioner</span>
+              <span class="certification__detail">CLF-C02</span>
+            </div>
+            <span class="certification__status certification__status--planned">Planned</span>
+          </li>
+          <li class="certification">
+            <div class="certification__icon certification__icon--planned">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <div class="certification__info">
+              <span class="certification__name">AWS AI Practitioner</span>
+              <span class="certification__detail">AIF-C01</span>
+            </div>
+            <span class="certification__status certification__status--planned">Planned</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="skills__grid animate-on-scroll">
+        <div class="skill-group">
+          <h3 class="skill-group__title">Infrastructure</h3>
+          <ul class="skill-group__list">
+            <li>Docker / Compose</li>
+            <li>Linux (Ubuntu/Debian)</li>
+            <li>Traefik / Cloudflare</li>
+            <li>TCP/IP, DNS, DHCP</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Networking</h3>
+          <ul class="skill-group__list">
+            <li>Cisco Catalyst / Meraki</li>
+            <li>Cisco Firepower</li>
+            <li>Network Segmentation</li>
+            <li>Wireshark</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Security</h3>
+          <ul class="skill-group__list">
+            <li>Network Security</li>
+            <li>Risk Assessment</li>
+            <li>Incident Response</li>
+            <li>Firewall / RLS</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3 class="skill-group__title">Development</h3>
+          <ul class="skill-group__list">
+            <li>TypeScript / Next.js</li>
+            <li>Python</li>
+            <li>PostgreSQL / Supabase</li>
+            <li>Git / Playwright</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="learning animate-on-scroll">
+        <h3 class="skills__section-title">What I'm Learning Now</h3>
+        <div class="learning__items">
+          <span class="learning__tag">CompTIA CySA+</span>
+          <span class="learning__tag">AWS Cloud Architecture</span>
+          <span class="learning__tag">Docker Security</span>
+          <span class="learning__tag">Container Hardening</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="experience section">
+    <div class="container">
+      <h2 class="section__title">Experience</h2>
+      <div class="experience__timeline">
+
+        <article class="experience-item animate-on-scroll">
+          <div class="experience-item__dot"></div>
+          <div class="experience-item__content">
+            <h3 class="experience-item__title">Cybersecurity Infrastructure Support Technician</h3>
+            <p class="experience-item__org">Texas Southern University</p>
+            <p class="experience-item__period">Apr 2025 - Present</p>
+            <ul class="experience-item__list">
+              <li>Lead student technician for TSU's first dedicated cybersecurity teaching lab</li>
+              <li>Configure and maintain Cisco Catalyst 9200/8200 core switching, Meraki MS130, and Firepower 1000</li>
+              <li>Design VLAN architecture isolating student, management, and production traffic</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience-item animate-on-scroll">
+          <div class="experience-item__dot"></div>
+          <div class="experience-item__content">
+            <h3 class="experience-item__title">IT Technician: UPS Systems Installation</h3>
+            <p class="experience-item__org">JosephOne Technologies / CCISD</p>
+            <p class="experience-item__period">Aug 2025 - Present</p>
+            <ul class="experience-item__list">
+              <li>Deployed <strong>600+</strong> enterprise UPS units across a full school district</li>
+              <li>Physical installation, cable management, and device commissioning</li>
+              <li>Configured centralized monitoring dashboard for cross-campus battery health visibility</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="experience-item animate-on-scroll">
+          <div class="experience-item__dot"></div>
+          <div class="experience-item__content">
+            <h3 class="experience-item__title">World Bank Project Intern</h3>
+            <p class="experience-item__org">National Electrification Project</p>
+            <p class="experience-item__period">Jun 2022 - Aug 2022</p>
+            <ul class="experience-item__list">
+              <li>Supported IT infrastructure planning for solar electrification impacting <strong>5,000+</strong> households in Liberia</li>
+              <li>Collaborated with engineers across three continents on database design and systems planning</li>
+            </ul>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <h2 class="section__title">Get in Touch</h2>
+      <p class="contact__intro">Open to full-time roles, internships, and co-ops in cybersecurity and infrastructure. Feel free to reach out.</p>
+      <div class="contact__cards animate-on-scroll">
+        <a href="mailto:jaechin9@gmail.com" class="contact__card">
+          <div class="contact__card-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="24" height="24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div class="contact__card-content">
+            <span class="contact__card-label">Email</span>
+            <span class="contact__card-value">jaechin9@gmail.com</span>
+          </div>
+          <svg class="contact__card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <line x1="7" y1="17" x2="17" y2="7"/>
+            <polyline points="7 7 17 7 17 17"/>
+          </svg>
+        </a>
+        <a href="https://github.com/JaeChin" class="contact__card" target="_blank" rel="noopener noreferrer">
+          <div class="contact__card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </div>
+          <div class="contact__card-content">
+            <span class="contact__card-label">GitHub</span>
+            <span class="contact__card-value">@JaeChin</span>
+          </div>
+          <svg class="contact__card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <line x1="7" y1="17" x2="17" y2="7"/>
+            <polyline points="7 7 17 7 17 17"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/jaedonchin/" class="contact__card" target="_blank" rel="noopener noreferrer">
+          <div class="contact__card-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </div>
+          <div class="contact__card-content">
+            <span class="contact__card-label">LinkedIn</span>
+            <span class="contact__card-value">Jaedon Chin</span>
+          </div>
+          <svg class="contact__card-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+            <line x1="7" y1="17" x2="17" y2="7"/>
+            <polyline points="7 7 17 7 17 17"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__content">
+      <p>&copy; 2026 Jaedon Chin. Built from scratch.</p>
+      <div class="footer__links">
+        <a href="mailto:jaechin9@gmail.com" class="footer__link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </a>
+        <a href="https://github.com/JaeChin" class="footer__link" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/jaedonchin/" class="footer__link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to Top -->
+<button class="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="20" height="20">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<script src="js/main.js"></script>
 </body>
 </html>
